@@ -17,6 +17,15 @@ int findOddOccuring1( int arr[], int num ) {
     }
 }
 
+// efficient solution 
+int findMissingNumber2(int arr[], int num ) {
+    int res = 0 ;
+    for(int i = 0; i < num; i++){
+        res ^= arr[i];
+    }
+    return res;
+}
+
 int main(){
     int num;
     cin >> num; 
@@ -24,7 +33,9 @@ int main(){
     for (int i= 0; i< num; i++){
         cin>> arr[i];
     }
-    cout << findOddOccuring1(arr, num);
+    // cout << findOddOccuring1(arr, num);
+
+    cout << findMissingNumber2(arr, num);
     return 0;
 
 
