@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
-
-int findOddOccuring( int arr[], int num ) {
+// time complexty is big-O (n*n);
+int findOddOccuring1( int arr[], int num ) {
 
     for(int i= 0; i< num; i++){
 
         int count =0;
-        for(int j= 0; j< num; i++){
+        for(int j= 0; j< num; j++){
             if(arr[i] == arr[j]){
                 count++;
             }
@@ -24,6 +24,8 @@ int main(){
     for (int i= 0; i< num; i++){
         cin>> arr[i];
     }
+    cout << findOddOccuring1(arr, num);
+    return 0;
 
 
 }
