@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// there might be one possible solution also in Q(N^2);
 bool isSorted(int arr[], int num ){
     for(int i = 0; i < num-1; i++){
         if( arr[i] > arr[i + 1 ]){
