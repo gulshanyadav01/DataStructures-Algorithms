@@ -10,6 +10,8 @@ int lcm(int num1 , int num2){
     return res;
 
 }
+// efficient solutin of lcm a*b/gcd(a,b);
+
 int main(){
     int num1, num2; 
     cin >> num1 >> num2;
