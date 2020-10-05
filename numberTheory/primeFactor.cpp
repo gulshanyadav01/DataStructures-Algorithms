@@ -11,6 +11,7 @@ bool isPrime(int num){
     }
     return true;
 }
+// this is taking Q(n^2 logn) time 
 void  primeFactor(int num){
     for(int i= 2; i< num; i++){
         if(isPrime(i)){
@@ -23,6 +24,23 @@ void  primeFactor(int num){
     }
 
     
+}
+// this is efficient solutin 
+void isPrime2(int num){
+    if(num <= 1){
+        return;
+    }
+    for(int i = 2; i*i <= num; i++){
+        while( num% i == 0){
+            cout << i << endl;
+            num /= i;
+        }
+    }
+    if(num > 1){
+        cout << num << endl;
+    
+    }
+
 }
 int main(){
     int num;
