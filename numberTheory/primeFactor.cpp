@@ -26,7 +26,7 @@ void  primeFactor(int num){
     
 }
 // this is efficient solutin 
-void isPrime2(int num){
+void primeFactor2(int num){
     if(num <= 1){
         return;
     }
@@ -45,7 +45,8 @@ void isPrime2(int num){
 int main(){
     int num;
     cin >> num;
-    primeFactor(num);
+    // primeFactor(num);
+    primeFactor2(num);
     return 0;  
 
 }
