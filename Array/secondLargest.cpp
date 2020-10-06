@@ -22,6 +22,21 @@ int secondlargest(int arr[]  , int num ){
     }
     return res;
 }
+// efficient solution 
+int secondLargest(int arr[], int num){
+    int res = -1;
+    int lar = 0;
+    for(int i= 1; i< num; i++){
+        if(arr[i] > arr[lar]){
+            res= lar;
+            lar= i;
+        }
+        else if (arr[i] != arr[lar]){
+            if(res == -1 || arr[i] > arr[res]) res = -1;
+        }
+    }
+    return res;
+}
 int main(){
    int num;
     cin >> num;
@@ -29,6 +44,6 @@ int main(){
     for(int i = 0; i < num; i++){
         cin >> arr[i];
     }
-    cout<< secondlargest(arr, num);
+    cout<< secondLargest(arr, num);
     return 0;
 }
