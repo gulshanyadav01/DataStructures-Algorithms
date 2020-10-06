@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// time complexity is Q(N);
 void reverseArray(int arr[], int num ){
     int i = 0;
     int j = num - 1;
