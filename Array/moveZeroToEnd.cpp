@@ -22,7 +22,7 @@ void moveZero(int arr[], int num){
 
 
 
-
+// this is linear time solution 
 void movesZeroToEnd(int arr[], int num ){
     int count = 0;
     for(int i = 0; i < num; i++){
