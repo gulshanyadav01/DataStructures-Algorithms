@@ -1,5 +1,7 @@
 #include<iostream>
+#include<vector>
 using namespace std;
+
 // this has time complexity Q(N^2);
 void leaderInArray (int arr[], int num){
     for(int i = 0; i < num; i++){
@@ -31,13 +33,18 @@ void leaderInArray2(int arr[], int num ){
 }
 // revision 
 void leaderInArr(int arr[],int num){
+    vector<int> v;
     int curr_lead = arr[num-1];
-    cout << curr_lead << " ";
+    v.push_back(curr_lead);
     for(int i= num-2; i >= 0; i--){
         if(arr[i] > curr_lead){
             curr_lead = arr[i];
-            cout << arr[i] <<" ";
+            v.push_back(arr[i]);
+            // cout << arr[i] <<" ";
         }
+    }
+    for(int i = v.size()-1; i >= 0; i--){
+        cout << v[i] << " ";
     }
 }
 
@@ -65,7 +72,7 @@ int main(){
     // leaderInArray(arr, num );
     // leaderInArray2(arr, num);
     // leaderInArr(arr, num);
-    leaderInArr2(arr,num);
+    leaderInArr(arr,num);
     return 0;
 
 }
