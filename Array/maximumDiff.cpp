@@ -1,5 +1,6 @@
 #include<iostream>
 #include<bits/stdc++.h>
+
 using namespace std;
 void maximumDiff(int arr[], int num ){
     int ma  = 0 ;
@@ -10,6 +11,15 @@ void maximumDiff(int arr[], int num ){
         }
     }
     cout << ma << endl;
+}
+// optimise solution 
+void maxDiff(int arr[], int num ){
+    int res = arr[1] - arr[0];
+    int mi = arr[0];
+    for(int i = 0;i < num; i++){
+        res = max(res, arr[i]-mi);
+        mi = min(arr[i], mi); 
+    }
 }
 int main(){
      int num;
