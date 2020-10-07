@@ -29,6 +29,18 @@ void leaderInArray2(int arr[], int num ){
         
 }
 }
+// revision 
+void leaderInArr(int arr[],int num){
+    int curr_lead = arr[num-1];
+    cout << curr_lead << " ";
+    for(int i= num-2; i >= 0; i--){
+        if(arr[i] > curr_lead){
+            curr_lead = arr[i];
+            cout << arr[i] <<" ";
+        }
+    }
+}
+
 int main(){
     int num;
     cin >> num;
@@ -37,6 +49,8 @@ int main(){
         cin >> arr[i];
     }
     // leaderInArray(arr, num );
-    leaderInArray2(arr, num);
+    // leaderInArray2(arr, num);
+    leaderInArr(arr, num);
+    return 0;
 
 }
