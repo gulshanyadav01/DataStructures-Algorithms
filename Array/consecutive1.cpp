@@ -13,7 +13,7 @@ int consective1(int arr[], int num ){
     }
     return res;
 }
-// second time 
+// second time but the time complexity still Q(N^2);
 int cons(int arr[], int num){
     int res= 0;
     int i = 0;
@@ -30,6 +30,22 @@ int cons(int arr[], int num){
     }
     return res;
 }
+
+int cons1(int arr[], int num){
+    int res= 0;
+    int count = 0;
+    for(int i= 0; i< num; i++){
+        if(arr[i] ==1 ) {
+            count++;
+            res = max(count,res);
+
+        }
+        else {
+            count = 0;
+        }
+    }
+    return res;
+}
 int main(){
      int num;
     cin >> num;
@@ -38,7 +54,8 @@ int main(){
         cin >> arr[i];
     }
     // cout << consective1(arr, num );
-    cout <<cons(arr, num);
+    // cout <<cons(arr, num);
+    cout << cons1(arr, num);
     return 0;
 
 }
