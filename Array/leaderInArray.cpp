@@ -41,16 +41,31 @@ void leaderInArr(int arr[],int num){
     }
 }
 
+void leaderInArr2(int arr[],int num){
+    
+    for(int i= 0; i< num; i++){
+        bool flag = false;
+        for(int j= i+1; j< num; j++){
+            if(arr[j] >= arr[i]){
+                flag = true;
+                break;
+            }
+        }
+        if(!flag) cout << arr[i] <<" ";
+    }
+}
+
 int main(){
     int num;
     cin >> num;
     int arr[num ];
-    for(int i= 0 ;i<num ;i++){
+    for(int i= 0 ;i< num ;i++){
         cin >> arr[i];
     }
     // leaderInArray(arr, num );
     // leaderInArray2(arr, num);
-    leaderInArr(arr, num);
+    // leaderInArr(arr, num);
+    leaderInArr2(arr,num);
     return 0;
 
 }
