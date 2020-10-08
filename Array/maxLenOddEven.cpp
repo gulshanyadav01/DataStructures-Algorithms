@@ -4,16 +4,19 @@ int maxLen(int arr[], int num){
     // int count = 0;
     int res = 1;
      int count = 1;
-    for(int i= 0; i< num; i++){
-       
-        if((arr[i]% 2 == 0 ) && (arr[i+1]%2 != 0 ) ||(arr[i]% 2 != 0) && (arr[i+1]%2 == 0) ){
+    for(int i= 1; i< num; i++){
+
+        if((arr[i]% 2 == 0 ) && (arr[i-1]%2 != 0 ) ||(arr[i]% 2 != 0) && (arr[i-1]%2 == 0)){
             count++;
+            
         }
         else {
             count = 1;
         }
         res =  max(count, res);
+       
     }
+    return res;
     
 }
 int main(){
