@@ -6,8 +6,10 @@ date: 08-oct-2020
 using namespace std;
 int kadaneAlgo(int arr[], int num){
     int res = 0;
+    int maxEnding =0;
     for(int i= 0; i< num; i++){
-        res = max(res + arr[i], arr[i]);
+        maxEnding = max(maxEnding + arr[i], arr[i]);
+        res = max(res, maxEnding);
     }
     return res;
 }
