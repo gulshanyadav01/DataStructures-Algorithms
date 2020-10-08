@@ -4,6 +4,7 @@ date: 08-oct-2020
 */
 #include<iostream>
 using namespace std;
+// majority of elements 
 int majorElem(int arr[], int num){
     for(int i= 0; i< num; i++){
         int count = 0;
