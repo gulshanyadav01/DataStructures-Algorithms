@@ -1,10 +1,10 @@
 /* 
 author: *gulshan yadav*
-date: 11-oct-2020
+date: 12-oct-2020
 */
 #include<iostream>
 using namespace std;
-// naive solution 
+// naive solution time complexity (sqrt(n));
 int sqroot1(int x){
     int i = 1;
     while(i*i <= x){
