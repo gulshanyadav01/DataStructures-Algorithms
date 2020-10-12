@@ -5,10 +5,16 @@ date: 11-oct-2020
 #include<iostream>
 using namespace std;
 // naive solution 
-int 
+int sqroot1(int x){
+    int i = 1;
+    while(i*i <= x){
+        i++;
+    }
+    return i-1;
+}
 
 // this is efficient solution time complexity is Q(logn);
-int sqroot(int x){
+int sqroot2(int x){
     int low = 1; 
     int high= x; 
      int ans= -1;
@@ -35,6 +41,7 @@ int sqroot(int x){
 int main(){
     int x;
     cin>> x; 
-    cout << sqroot(x);
+    // cout << sqroot2(x);
+    cout << sqroot1(x);
     return 0;
 }
