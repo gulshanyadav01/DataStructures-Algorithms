@@ -7,6 +7,7 @@ date: 14-oct-2020
 #include<vector>
 using namespace std;
 
+// this has time complexity Q(N);
 void mergeTwoSortArray(){
     int n = 5, m =5;
     int arr1[n] = { 2, 4, 6, 8, 10 };
