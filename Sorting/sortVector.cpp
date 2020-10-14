@@ -4,18 +4,17 @@ date: 14-oct-2020
 */
 #include<iostream>
 #include<algorithm>
-
+#include<vector>
 using namespace std;
 int main(){
-    int n=4;
-    int arr[n] = {20, 5, 7, 10};
-    sort(arr, arr+n);
-    
-    for(int x: arr){
-        cout << x << " ";
-    }
 
+    vector<int> v = {1,2,5,4,3};
+
+    sort(v.begin(), v.end());
+
+    for(int x: v) cout << x << " ";
 
     return 0;
+
 
 }
