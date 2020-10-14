@@ -15,7 +15,7 @@ void mergeTwoSortArray(){
     int i= 0; 
     int j= 0; 
     int k= 0;
-    while(i<=n  && j<=m){
+    while(i< n  && j< m){
         if(arr1[i] < arr2[j]){
             arr3[k++] = arr1[i];
             i++;
@@ -27,7 +27,15 @@ void mergeTwoSortArray(){
         }
  
     }
-    for(int p= 0; p< n+m; i++){
+    while(i< n){
+        arr3[k++] = arr1[i];
+        i++;
+    }
+    while(j< m){
+        arr3[k++] = arr2[j];
+        j++;
+    }
+    for(int p= 0; p< n+m; p++){
         cout << arr3[p] << " ";
     }
 }
