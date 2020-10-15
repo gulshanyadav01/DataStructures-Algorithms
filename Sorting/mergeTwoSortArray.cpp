@@ -8,6 +8,7 @@ date: 14-oct-2020
 using namespace std;
 // merging of arrays 
 // this has time complexity Q(N);
+// this is merging 
 void mergeTwoSortArray(){
     int n = 5, m =5;
     int arr1[n] = { 2, 4, 6, 8, 10 };
