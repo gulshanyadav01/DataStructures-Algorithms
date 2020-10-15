@@ -43,4 +43,5 @@ void mergeTwoSortArray(){
 int main(){
     mergeTwoSortArray();
     return 0;
+    return 0;
 }
