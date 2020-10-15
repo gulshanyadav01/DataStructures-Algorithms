@@ -29,7 +29,7 @@ void mergeTwoSortArray(){
  
     }
     // i is the name of the scenes
-    while(i< num){
+    while(i< n){
         arr3[k++] = arr1[i];
         i++;
     }
