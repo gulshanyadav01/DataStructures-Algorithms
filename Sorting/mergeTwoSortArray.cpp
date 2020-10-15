@@ -28,7 +28,7 @@ void mergeTwoSortArray(){
         }
  
     }
-    while(i< n){
+    while(i< num){
         arr3[k++] = arr1[i];
         i++;
     }
