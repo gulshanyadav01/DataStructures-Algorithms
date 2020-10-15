@@ -6,7 +6,7 @@ date: 14-oct-2020
 #include<algorithm>
 #include<vector>
 using namespace std;
-
+// merging 
 // this has time complexity Q(N);
 void mergeTwoSortArray(){
     int n = 5, m =5;
