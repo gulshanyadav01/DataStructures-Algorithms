@@ -34,8 +34,8 @@ void unionOfTwoSortedArray(int arr1[],int arr2[], int num1, int num2){
     int i =0 ; 
     int j= 0; 
     while(i< num1 && j< num2){
-        if(i> 0 && arr1[i-1] == arr1[i])continue;
-        if(j> 0 && arr2[j-1] == arr2[j]) continue;
+        if(i> 0 && arr1[i-1] == arr1[i]) i++; continue; 
+        if(j> 0 && arr2[j-1] == arr2[j]) j++; continue;
         if(arr1[i] < arr2[j]) cout << arr1[i] << " "; i++;
         if(arr2[j] < arr1[i]) cout << arr2[j] << " "; j++;
         if(arr1[i] == arr2[j]) cout << arr1[i]<<" "; i++; j++;
