@@ -41,6 +41,7 @@ void unionOfTwoSortedArray(int arr1[],int arr2[], int num1, int num2){
         if(arr1[i] == arr2[j]) cout << arr1[i]<<" "; i++; j++;
     }
     while(i< num1){
+        
         cout << arr1[i]<< " ";
         i++;
     }
