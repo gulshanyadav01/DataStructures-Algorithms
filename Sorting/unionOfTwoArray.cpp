@@ -6,7 +6,7 @@ date: 16-oct-2020
 #include<algorithm>
 using namespace std;
 
-// naive approach
+// naive approach time complexity for this approach is Q((m+nlog(m+n)))
 void unionOfTwoArray(int arr1[],int arr2[], int num1, int num2){
     int arr3[num1+ num2];
     int i = 0;
@@ -27,6 +27,28 @@ void unionOfTwoArray(int arr1[],int arr2[], int num1, int num2){
     }
 }
 
+// efficient solution of union of two sorted array
+
+void unionOfTwoSortedArray(int arr1[],int arr2[], int num1, int num2){
+
+    int i =0 ; 
+    int j= 0; 
+    while(i< num1 && j< num2){
+        if(i> 0 && arr1[i-1] == arr1[i])continue;
+        if(j> 0 && arr2[j-1] == arr2[j]) continue;
+        if(arr1[i] < arr2[j]) cout << arr1[i] << " "; i++;
+        if(arr2[j] < arr1[i]) cout << arr2[j] << " "; j++;
+        if(arr1[i] == arr2[j]) cout << arr1[i]<<" "; i++; j++;
+    }
+    while(i< num1){
+        cout << arr1[i]<< " ";
+        i++;
+    }
+    while(j< num2){
+        cout << arr2[j]<<" ";
+        j++;
+    }
+}
 
 int main(){
     int num1,num2 ;
@@ -39,6 +61,7 @@ int main(){
     for(int i=0; i<num2; i++){
         cin >> arr2[i];
     }
-    unionOfTwoArray(arr1, arr2, num1, num2);
+    // unionOfTwoArray(arr1, arr2, num1, num2);
+    unionOfTwoSortedArray(arr1, arr2, num1 , num2);
     return 0;
 }
