@@ -6,6 +6,7 @@ date: 16-oct-2020
 #include<algorithm>
 using namespace std;
 // quick sort implementation by Lomuto partition 
+// @ time complexity is (n*log(n))
 int partition(int arr[], int low, int high){
     int pivot = arr[high];
     int i = low-1;
