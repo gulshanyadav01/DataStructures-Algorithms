@@ -9,22 +9,22 @@ using namespace std;
 // @ time complexity is (n*log(n))
 int partition(int arr[], int low, int high){
     int pivot = arr[high];
-    int i = low;
+    int i = low-1;
     int j = low; 
     for(; j<= high-1; j++){
         if(arr[j]< pivot){
-            
+            i++;
             int temp = arr[j];
             arr[j] = arr[i];
             arr[i] = temp;
-            i++;
+            
 
         }
     }
     int temp = arr[high];
-    arr[high] = arr[i];
-    arr[i] = temp;
-    return i;
+    arr[high] = arr[i+1];
+    arr[i+1] = temp;
+    return i+1;
 
 }
 
