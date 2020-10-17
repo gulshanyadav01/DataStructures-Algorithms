@@ -1,6 +1,6 @@
 /* 
 author: *gulshan yadav*
-date: 16-oct-2020
+date: 17-oct-2020
 */
 #include<iostream>
 #include<algorithm>
