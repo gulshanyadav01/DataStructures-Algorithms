@@ -5,7 +5,7 @@ date: 16-oct-2020
 #include<iostream>
 #include<algorithm>
 using namespace std;
-
+// quick sort implementation by Lomuto partition 
 int partition(int arr[], int low, int high){
     int pivot = arr[high];
     int i = low-1;
@@ -19,8 +19,8 @@ int partition(int arr[], int low, int high){
 
         }
     }
-    int temp = arr[j];
-    arr[j] = arr[i+1];
+    int temp = arr[high];
+    arr[high] = arr[i+1];
     arr[i+1] = temp;
     return i+1;
 
