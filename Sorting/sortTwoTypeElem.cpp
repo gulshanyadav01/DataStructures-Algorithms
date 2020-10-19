@@ -19,7 +19,6 @@ void sortTwoTypeElem(int arr[], int num){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
-
     }
 }
 int main(){
