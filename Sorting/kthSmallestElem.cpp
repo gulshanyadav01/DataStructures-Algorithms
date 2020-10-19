@@ -6,6 +6,18 @@ date: 19-oct-2020
 #include<algorithm>
 using namespace std;
 
+
+// this is naive solution 
+
+int kthSmallElem(int arr[],int num, int k){
+    // sort the array 
+    sort(arr, arr+num);
+    return arr[k-1];
+}
+
+
+// this is efficient solution but the
+// worst time complexity of this algo is (n^2);
 int partition(int arr[], int low,  int high){
     int i= low-1; 
     int pivot = arr[high];
@@ -34,7 +46,7 @@ int kthSmallestElem(int arr[], int num, int k ){
         if(p== k-1){
             return p;
         }
-        else if (p< k-1){
+        else if (p < k-1){
             low = p+ 1; 
         }
         else {
@@ -53,6 +65,7 @@ int main(){
         cin >> arr[i];
     }
 
-    cout << kthSmallestElem(arr, 0, num);
+    // cout << arr[kthSmallestElem(arr,num, k)];
+    cout << kthSmallElem(arr, num , k );
     return 0;
 }
