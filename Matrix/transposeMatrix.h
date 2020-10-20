@@ -2,7 +2,7 @@
 author: *gulshan yadav*
 date: 20-oct-2020
 */
-#include<iostream>
+// #include<iostream>
 #include<vector>
 #include<algorithm>
 using namespace std;
@@ -42,20 +42,20 @@ void printTranspose(vector<vector<int>> &arr){
 
 
 
-int main(){
-    vector<vector<int>> arr;
-    int m,n; 
-    cin >> m >> n; 
-    for(int i = 0; i< m ; i++){
-        vector<int> v; 
-        for(int j= 0; j< n; j++){
-            int k ;
-            cin>>k ;
-            v.push_back(k);
-        }
-        arr.push_back(v);
-    }
-    // printTransposeMatrix(arr);
-    printTranspose(arr);
-    return 0;
-}
+// int main(){
+//     vector<vector<int>> arr;
+//     int m,n; 
+//     cin >> m >> n; 
+//     for(int i = 0; i< m ; i++){
+//         vector<int> v; 
+//         for(int j= 0; j< n; j++){
+//             int k ;
+//             cin>>k ;
+//             v.push_back(k);
+//         }
+//         arr.push_back(v);
+//     }
+//     // printTransposeMatrix(arr);
+//     printTranspose(arr);
+//     return 0;
+// }
