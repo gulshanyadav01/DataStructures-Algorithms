@@ -6,6 +6,11 @@ date: 20-oct-2020
 #include<vector>
 #include<algorithm>
 using namespace std;
+
+// this is the naive solution of problem time complexity of this problem is Q(n^2);
+// this is printing only if we have the conversion of full array 
+// then we need extra space to hold initial value 
+// then the space complexity Q(n)
 void printTransposeMatrix(vector<vector<int>> &arr){
     for(int i = 0; i< arr.size(); i++){
         for(int j = 0; j< arr[i].size(); j++){
@@ -14,6 +19,29 @@ void printTransposeMatrix(vector<vector<int>> &arr){
         cout << endl;
     }
 }
+
+// efficient solution with no extra space 
+
+void printTranspose(vector<vector<int>> &arr){
+    for(int i = 0; i<arr.size(); i++){
+        for(int j = i+1; j< arr[i].size(); j++){
+            int temp = arr[i][j]; 
+            arr[i][j] = arr[j][i];
+            arr[j][i] = temp;
+        }
+    }
+
+    // print the array 
+    for(int i = 0; i< arr.size(); i++){
+        for(int j = 0; j< arr[i].size(); j++){
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+
+
 int main(){
     vector<vector<int>> arr;
     int m,n; 
@@ -27,6 +55,7 @@ int main(){
         }
         arr.push_back(v);
     }
-    printTransposeMatrix(arr);
+    // printTransposeMatrix(arr);
+    printTranspose(arr);
     return 0;
 }
