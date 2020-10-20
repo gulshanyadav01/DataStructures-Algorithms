@@ -8,7 +8,7 @@ date: 20-oct-2020
 using namespace std;
 
 // print the spiral Traversal of Matrix 
-//
+// time complexity of this solution is Q(n^2)
 
 void printSpiral(vector<vector<int>> &arr,int m, int n){
     int top= 0, left = 0, right = n-1,  bottom = m-1;
