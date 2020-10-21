@@ -17,6 +17,9 @@ class myHash{
         table = new list<int> [b];
 
     }
+
+
+
     void insert(int key ){
         int i = key% bucket;
         table[i].push_back(key);
@@ -33,6 +36,13 @@ class myHash{
         return false;
     }
 
+
+    void remove(int key){
+        int i = key % bucket; 
+        table[i].remove(key);
+
+    }
+
 };
 
 int main(){
@@ -42,7 +52,9 @@ int main(){
 
     myHash hey(key);
     hey.insert(10);
-    cout << hey.search(1000);
+    cout << hey.search(10)<< "\n";
+    hey.remove(10);
+    cout << hey.search(10)<< "\n";
     return 0;
 }
 
