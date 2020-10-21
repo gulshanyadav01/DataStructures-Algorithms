@@ -6,7 +6,7 @@ date: 16-oct-2020
 #include<algorithm>
 using namespace std;
 
-// this is naive approach 
+// this is naive approach time complexity of this method is Q(n^2);
 
 void intersectionOfTwoArray(int arr1[],int arr2[], int num1, int num2){
     for(int i= 0; i< num1; i++){
@@ -20,6 +20,8 @@ void intersectionOfTwoArray(int arr1[],int arr2[], int num1, int num2){
         }
     }
 }
+
+// efficient solution 
 
 int main(){
     int num1,num2 ;

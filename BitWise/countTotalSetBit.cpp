@@ -15,7 +15,7 @@ int countSetBit( int num ) {
 
 int totalCountBitSet(int num ) {
     int count = 0 ;
-    for(int i =1; i<= num; i++ ) {
+    for(int i =1; i <= num; i++ ) {
         count  += countSetBit(i);
     }
     return count;
@@ -24,7 +24,6 @@ int totalCountBitSet(int num ) {
 int main(){
     int num;
     cin >> num;
-
     cout<<totalCountBitSet(num );
     return 0;
 }

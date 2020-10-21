@@ -9,7 +9,7 @@ void  freqSortArr(int arr[], int num ){
         }
         else{
             cout << arr[i-1] << " " << freq << endl;
-            freq =1; 
+            freq = 1; 
         }
     }
 }

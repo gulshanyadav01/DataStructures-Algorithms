@@ -2,7 +2,7 @@
 using namespace std;
 void checkKthBitSet(int num , int k ){
     // cout <<  ? "yes" : "no";
-    if((num & (1<<k) != 0)) cout<<"yes";
+    if(num & (1<<k) != 0) cout<<"yes";
     else cout <<"no";
 
 

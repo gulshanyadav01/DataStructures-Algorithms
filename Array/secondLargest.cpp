@@ -32,7 +32,7 @@ int secondLargest(int arr[], int num){
             lar= i;
         }
         else if (arr[i] != arr[lar]){
-            if(res == -1 || arr[i] > arr[res]) res = -1;
+            if(res == -1 || (arr[i] > arr[res])) res = -1;
         }
     }
     return res;
