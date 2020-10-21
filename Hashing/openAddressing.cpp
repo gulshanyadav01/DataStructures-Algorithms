@@ -48,7 +48,7 @@ class myHash{
 };
 
 int main(){
-    cout <<" enter the bucket value "<< " \n";
+    cout <<" enter  bucket value "<< " \n";
     myHash hey(7);
 
     hey.insert(10); 
