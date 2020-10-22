@@ -29,7 +29,7 @@ int main(){
     else{
         cout << "not found"<< "\n";
     }
-    cout << m.size()<< endl;
+    cout <<"size"<<  m.size()<< endl;
     // we can iterate through a unordered map by 
     for(auto it = m.begin(); it != m.end(); it++){
         cout << it->first <<" " << it->second << endl;
@@ -40,5 +40,9 @@ int main(){
     else{
         cout << "not present" << "\n";
     }
+
+    // erase function is used to remove key and value pair:
+    m.erase("gulshan");
+    cout << "size"<<  m.size()<< endl;
     return 0; 
 }
