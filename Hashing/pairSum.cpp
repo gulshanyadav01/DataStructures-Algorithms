@@ -10,6 +10,14 @@ date: 22-oct-2020
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// we know the naive approach
+// take two loop and traverse the array to find (arr1[i] + arr2[j] == sum)
+// return true;
+// it has the time complexity O(n^2)
+
+
+// this is efficient approach time is O(n) and space is O(n)
 bool pairSum(int arr[], int num, int sum ){
     unordered_set<int> s;
     for(int i = 0; i< num; i++){
