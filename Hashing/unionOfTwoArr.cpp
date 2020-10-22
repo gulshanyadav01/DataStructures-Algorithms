@@ -38,6 +38,19 @@ int unionOfTwoArray(int arr1[], int arr2[], int num1, int num2){
     }
     return res;
 
+} 
+
+// efficient solution 
+
+int unionOfTwoArray2(int arr1[], int arr2[], int num1, int num2) {
+    unordered_set<int> s; 
+    for(int i = 0; i< num1; i++){
+        s.insert(arr1[i]);
+    }
+    for(int i = 0; i< num2; i++){
+        s.insert(arr2[i]);
+    }
+    return s.size();
 }
 
 int main(){
@@ -51,6 +64,6 @@ int main(){
     for(int i = 0; i< num2; i++){
         cin >> arr2[i]; 
     }
-    cout << unionOfTwoArray(arr1, arr2, num1, num2);
+    cout << unionOfTwoArray2(arr1, arr2, num1, num2);
     return 0;
 }
