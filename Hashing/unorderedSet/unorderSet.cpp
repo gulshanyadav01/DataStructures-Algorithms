@@ -15,7 +15,7 @@ int main(){
     s.insert(10);
     s.insert(20);
     s.insert(30);
-    for(auto it: s) cout << *it<< " "
+    for(auto it: s) cout "
     cout << s.size()<< "\n";
     return 0; 
 }
