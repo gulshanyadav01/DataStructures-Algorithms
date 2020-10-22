@@ -30,5 +30,15 @@ int main(){
         cout << "not found"<< "\n";
     }
     cout << m.size()<< endl;
+    // we can iterate through a unordered map by 
+    for(auto it = m.begin(); it != m.end(); it++){
+        cout << it->first <<" " << it->second << endl;
+    }
+    if(m.count("gulshan")>0){
+        cout << "present"<< "\n";
+    }
+    else{
+        cout << "not present" << "\n";
+    }
     return 0; 
 }
