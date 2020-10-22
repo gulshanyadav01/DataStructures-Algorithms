@@ -30,7 +30,8 @@ int countDistElem(int arr[], int num){
     return res; 
 }
 
-// this is implemented by unorderedset 
+// this is implemented by unorderedset Time Complexity is Q(n) and 
+// space comlexity is Q(n)
 int countDistinctElem(int arr[], int num){
     unordered_set<int> s; 
     for(int i= 0; i< num; i++){
