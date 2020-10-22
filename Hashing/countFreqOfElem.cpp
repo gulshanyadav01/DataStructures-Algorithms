@@ -34,6 +34,8 @@ void  countFreqOfElem(int arr[], int num){
 }
 
 // efficient approach by unordered map 
+// time : O(n)
+// space: O(n)
 
 void printFreqOfElem(int arr[], int num){
     unordered_map<int, int> m; 
