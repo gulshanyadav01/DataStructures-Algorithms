@@ -13,6 +13,7 @@ class myHash{
     public: 
     int bucket; 
     int arr[7] = {0}; 
+    int size = 0; 
 
     myHash(int b){
         bucket = b;
@@ -23,6 +24,7 @@ class myHash{
         int i = key % bucket; 
         arr[i] = key; 
         cout << arr[i] << endl;
+        size++;
     }
 
    bool search(int key){
@@ -44,6 +46,18 @@ class myHash{
        }
        return false;
    }
+
+
+   void remov(int key ){
+       int i = key % bucket; 
+       arr[i] = -1; 
+       size--;
+
+   }
+
+   int  length ( ){
+       return size;
+   }
     
 };
 
@@ -54,9 +68,13 @@ int main(){
     hey.insert(10); 
     hey.insert(20);
     hey.insert(50);
-    cout << hey.search(10);
-    cout << hey.search(20);
-    cout << hey.search(50);
+    cout << hey.search(10)<< endl;
+    cout << hey.search(20)<<endl;
+    hey.remov(10);
+    cout << hey.search(50)<<endl;
+    cout << hey.search(10)<<endl;
+    hey.remov(64);
+    cout << hey.length()<< "\n";
     // cout << hey.size1()<< "\n";
     return 0;
   
