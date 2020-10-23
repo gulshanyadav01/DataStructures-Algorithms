@@ -27,6 +27,8 @@ bool subArraySumZero(int arr[], int num){
 }
 
 // efficient Approach
+// Time Complexity O(n)
+// space Complexity O(n)
 
 bool subArraySumZero2(int arr[], int num){
     int prefixSum = 0; 
