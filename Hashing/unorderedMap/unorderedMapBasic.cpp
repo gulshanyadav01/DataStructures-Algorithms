@@ -10,6 +10,12 @@ date: 22-oct-2020
 #include<bits/stdc++.h>
 #include<unordered_map>
 using namespace std;
+int insertion(){
+    unordered_map<int,int > m;
+    m.insert({1,2});
+    m.insert({3,4});
+    cout << m[]
+}
 
 int main(){
     unordered_map<string, int > m;

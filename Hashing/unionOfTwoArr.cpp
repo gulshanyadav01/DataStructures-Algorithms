@@ -10,8 +10,8 @@ date: 22-oct-2020
 #include<bits/stdc++.h>
 using namespace std;
 
+// naive approach
 int unionOfTwoArray(int arr1[], int arr2[], int num1, int num2){
-
     int temp[num1 + num2]; 
     int index= 0; 
     int res = 0;
@@ -37,7 +37,6 @@ int unionOfTwoArray(int arr1[], int arr2[], int num1, int num2){
         
     }
     return res;
-
 } 
 
 // efficient solution 

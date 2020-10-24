@@ -25,6 +25,9 @@ int longestSubArrayWithEqualZeroAndOne(int arr[], int num){
     return res;
 }
 
+
+
+
 int main(){
     int num; 
     cin >> num; 
