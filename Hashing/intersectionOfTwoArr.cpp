@@ -10,6 +10,27 @@ date: 22-oct-2020
 #include<bits/stdc++.h>
 using namespace std;
 
+// naive solution 
+
+void intersectionOfArray(int arr1[], int arr2[], int num1, int num2){
+    for(int i = 0; i< num1; i++){
+        bool flag = false;
+        for(int j = i-1; j>= 0; j--){
+            if(arr1[i] == arr1[j]){
+                flag = true;
+                break;
+            }
+        }
+        if(flag) continue;
+        for(int j = 0; j< num2; j++){
+            if(arr1[i] == arr2[j]){
+                cout << arr1[i]<< " ";
+            }
+        }
+    }
+}
+
+
 void  intersectionOfTwoArr(int arr1[], int arr2[], int num1, int num2){
     int res =0; 
     unordered_set<int> s;
@@ -43,6 +64,8 @@ int main(){
     for(int i = 0; i< num2; i++){
         cin >> arr2[i]; 
     }
-    intersectionOfTwoArr(arr1, arr2, num1, num2);
+    // intersectionOfTwoArr(arr1, arr2, num1, num2);
+    intersectionOfArray(arr1,arr2, num1, num2);
+
     return 0;
 }

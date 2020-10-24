@@ -30,6 +30,8 @@ bool pairSum(int arr[], int num, int sum ){
     
 }
 
+
+
 int main(){
     int num; 
     cin >> num; 
