@@ -53,11 +53,23 @@ int leftMostRepeat3(string s){
     return ( res == INT_MAX) ? -1: res; 
 }
 
+// third most efficient solution 
+
+int leftMostRepeat4(string s ){
+    int res = -1; 
+    int visited[CHAR]; 
+    fill(visited, visited+CHAR, false);
+    for(int i = s.length()- 1; i>= 0; i--) {
+        if(visited[s[i]]) res = i; 
+        else { visited[s[i]] = true; }
+    }
+    return res; 
+}
 
 int main(){
     string s; 
     cin >> s; 
-    cout << leftMostRepeat3(s);
+    cout << leftMostRepeat4(s);
 
     return 0;
 }
