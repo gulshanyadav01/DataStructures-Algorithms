@@ -7,7 +7,7 @@ Date: 24-oct-2020
 using namespace std;
 const int CHAR = 256;
 
-void reverseString(string *s, int low, int high){
+void reverseString(string &s, int low, int high){
     while(low<= high){
         char temp  = s[low];
         s[low] = s[high]; 
@@ -17,7 +17,7 @@ void reverseString(string *s, int low, int high){
     }
 }
 
-void reverseWordInString(string *s){
+void reverseWordInString(string &s){
 
     int start = 0; 
     for(int end = 0; end < s.length(); end++){
@@ -35,7 +35,7 @@ void reverseWordInString(string *s){
 int main(){
     string s; 
     getline(cin, s); 
-    cout << s<<"\n"; 
+    cout << s<<"\n";
     reverseWordInString(s);
     cout << s<< "\n"; 
     return 0;
