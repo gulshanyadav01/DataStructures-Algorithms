@@ -27,6 +27,23 @@ void  naiveSearch(string &text, string &pat){
     }
 }
 
+//improved naive search for distinct character 
+
+void improvedNaiveSearch(string text, string pat){
+    int n = text.length();
+    int m = pat.length(); 
+
+    for(int i= 0; i<= n-m;){
+        int j; 
+        for(j= 0; j< m; j++){
+            if(text[i+j] != pat[j]) break;
+        }
+        if(j== m ) cout << i<<"\n";
+        if(j == 0) i++;
+        else { i= i+j; }
+    }
+}
+
 int main(){
     cout << "enter the text string"<<"\n";
     string text; 
@@ -34,7 +51,8 @@ int main(){
     cout << "enter the pattern string"<< "\n";
     string pat; 
     cin >> pat;
-    naiveSearch(text, pat);
+    // naiveSearch(text, pat);
+    improvedNaiveSearch(text, pat);
 
     return 0;
     
