@@ -28,7 +28,8 @@ void  naiveSearch(string &text, string &pat){
 }
 
 //improved naive search for distinct character 
-
+// time complexity of this algorithm is Q(n)
+// this is work well if all the character in pattern is distinct
 void improvedNaiveSearch(string text, string pat){
     int n = text.length();
     int m = pat.length(); 
