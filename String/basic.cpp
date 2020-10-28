@@ -22,9 +22,9 @@ int main(){
     //     if(arr[i]>0) cout << (char)(i+'a')<<" "<< arr[i]<< "\n";
         
     // }
-    string s ;
-    getline(cin, s);
-    cout << s; 
+    string str ;
+    getline(cin, str);
+    cout << str; 
     return 0;
 
     
