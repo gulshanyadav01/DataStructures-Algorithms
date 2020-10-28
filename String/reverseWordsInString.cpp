@@ -8,6 +8,8 @@ using namespace std;
 const int CHAR = 256;
 
 // first reverse the word
+// then reverse the whole array of character
+// time complexity of this solution is Q(N^2)
 
 void reverseString(string &s, int low, int high){
     while(low<= high){
