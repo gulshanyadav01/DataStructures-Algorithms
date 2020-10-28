@@ -21,9 +21,10 @@ void reverseWordInString(string &s){
 
     int start = 0; 
     for(int end = 0; end < s.length(); end++){
+        // when space is encountered
         if(s[end] == ' '){
             reverseString(s, start, end-1);
-            start = end+1;
+            start = end+ 1;
         }
 
     }
