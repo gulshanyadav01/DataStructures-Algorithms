@@ -7,6 +7,8 @@ Date: 26-oct-2020
 using namespace std;
 const int CHAR = 256;
 
+// first reverse the word
+
 void reverseString(string &s, int low, int high){
     while(low<= high){
         char temp  = s[low];
