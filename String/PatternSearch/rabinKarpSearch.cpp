@@ -10,6 +10,7 @@ using namespace std;
 void rabinKarpSearch(string text, string pat,int q){ 
     int m = pat.length(); 
     int n = text.length(); 
+    cout << m << n; 
     
     int h = 1; 
     for(int i = 1; i<= m-1; i++){
@@ -26,14 +27,19 @@ void rabinKarpSearch(string text, string pat,int q){
 
         if(p == t){
             bool flag = true; 
+            cout << "hello"; 
             for(int j= 0; j< m; j++){
-                if(text[i+j] != pat[j]) flag = false; break;
+                if(text[i+j] != pat[j]) {
+                    flag = false; 
+                    break;
+                }
                 
             }
             if(flag) cout << i<< " "; 
             if(i< n-m){ 
                 t = (d*(t - (text[i] * h)) + text[i+m]) %q; 
             }
+            if (t<0) t = t + q; 
 
         }
     }
