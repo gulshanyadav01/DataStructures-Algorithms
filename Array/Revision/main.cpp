@@ -5,6 +5,7 @@
 #include "leftRotate.h"
 #include "moveZeroToEnd.h"
 #include "leftRotateByDplaces.h"
+#include "leader.h"
 using namespace std;
 
 
@@ -20,6 +21,7 @@ int main() {
     //  removeDup(arr, num); 
     // moveZeroToEnd(arr, num); 
     // leftRotate(arr, num); 
-    leftRotateByD(arr, num); 
+    // leftRotateByD(arr, num); 
+    leader(arr, num); 
     return 0;
 }
