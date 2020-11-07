@@ -8,8 +8,8 @@ void leftRotate(int arr[], int num){
     }
     arr[i] = temp; 
 
-    for(int j =0; j< num; j++){
-        cout << arr[j] << " "; 
-    }
+    // for(int j =0; j< num; j++){
+    //     cout << arr[j] << " "; 
+    // }
 
 }

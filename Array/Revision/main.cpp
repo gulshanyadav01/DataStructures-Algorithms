@@ -4,6 +4,7 @@
 #include "secondLar.h"
 #include "leftRotate.h"
 #include "moveZeroToEnd.h"
+#include "leftRotateByDplaces.h"
 using namespace std;
 
 
@@ -18,6 +19,7 @@ int main() {
     // cout << secondLargest(arr, num); 
     //  removeDup(arr, num); 
     // moveZeroToEnd(arr, num); 
-    leftRotate(arr, num); 
+    // leftRotate(arr, num); 
+    leftRotateByD(arr, num); 
     return 0;
 }
