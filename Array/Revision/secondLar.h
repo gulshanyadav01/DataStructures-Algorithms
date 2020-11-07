@@ -8,6 +8,7 @@ date: 07-NOV-2020
 #include<iostream>
 using namespace std; 
 
+
 int secondLargest(int arr[], int num){
     int res = -1; 
     int lar = arr[0]; 
@@ -25,13 +26,3 @@ int secondLargest(int arr[], int num){
     return res; 
 }
 
-int main(){
-    int num; 
-    cin >> num; 
-    int arr[num]; 
-    for(int i = 0; i< num; i++){
-        cin >> arr[i];
-    }
-    cout << secondLargest(arr, num); 
-    return 0;
-}
