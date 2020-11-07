@@ -2,6 +2,7 @@
 #include<iostream>
 #include "removeDup.h"
 #include "secondLar.h"
+#include "leftRotate.h"
 #include "moveZeroToEnd.h"
 using namespace std;
 
@@ -16,6 +17,7 @@ int main() {
     }
     // cout << secondLargest(arr, num); 
     //  removeDup(arr, num); 
-    moveZeroToEnd(arr, num); 
+    // moveZeroToEnd(arr, num); 
+    leftRotate(arr, num); 
     return 0;
 }

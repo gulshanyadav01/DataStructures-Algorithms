@@ -6,7 +6,7 @@ date: 07-NOV-2020
 */
 
 // #include<iostream>
-// using namespace std; 
+using namespace std; 
 
 
 int secondLargest(int arr[], int num){
