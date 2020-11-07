@@ -6,6 +6,7 @@
 #include "moveZeroToEnd.h"
 #include "leftRotateByDplaces.h"
 #include "leader.h"
+#include "maxDiff.h"
 using namespace std;
 
 
@@ -23,5 +24,6 @@ int main() {
     // leftRotate(arr, num); 
     // leftRotateByD(arr, num); 
     // leader(arr, num); 
+    cout << maxDiff(arr, num); 
     return 0;
 }
