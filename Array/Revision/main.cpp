@@ -7,6 +7,7 @@
 #include "leftRotateByDplaces.h"
 #include "leader.h"
 #include "maxDiff.h"
+#include "freq.h"
 using namespace std;
 
 
@@ -24,6 +25,7 @@ int main() {
     // leftRotate(arr, num); 
     // leftRotateByD(arr, num); 
     // leader(arr, num); 
-    cout << maxDiff(arr, num); 
+    // cout << maxDiff(arr, num); 
+    freq(arr, num); 
     return 0;
 }
