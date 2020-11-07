@@ -22,6 +22,6 @@ int main() {
     // moveZeroToEnd(arr, num); 
     // leftRotate(arr, num); 
     // leftRotateByD(arr, num); 
-    leader(arr, num); 
+    // leader(arr, num); 
     return 0;
 }
