@@ -11,5 +11,4 @@ void leader(int arr[], int num){
 }
 
 
-// return leader; 
-this is overall code of leader ; 
+// return leader
