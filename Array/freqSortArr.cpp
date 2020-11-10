@@ -39,6 +39,6 @@ int main(){
         cin >> arr[i];
     }
     freqSortArr(arr, num );
-    freq(arr, num);
+    // freq(arr, num);
     return 0;
 }
