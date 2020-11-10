@@ -11,4 +11,4 @@ void leader(int arr[], int num){
 }
 
 
-return leader; 
+// return leader; 
