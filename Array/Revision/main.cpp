@@ -25,7 +25,7 @@ int main() {
     // leftRotate(arr, num); 
     // leftRotateByD(arr, num); 
     // leader(arr, num); 
-    cout << maxDiff(arr, num); 
+    // cout << maxDiff(arr, num); 
     freq(arr, num); 
     return 0;
 }
