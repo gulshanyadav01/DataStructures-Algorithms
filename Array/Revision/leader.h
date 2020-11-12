@@ -6,7 +6,6 @@ void leader(int arr[], int num){
         if(currLead< arr[i]) { 
             currLead = arr[i]; 
             cout << currLead << " ";
-            cout << currLead << " "; 
             
             
 
