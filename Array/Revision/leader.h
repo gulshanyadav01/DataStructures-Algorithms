@@ -5,7 +5,7 @@ void leader(int arr[], int num){
     for(int i = num-2; i>= 0; i--){
         if(currLead< arr[i]) { 
             currLead = arr[i]; 
-            cout << currLead << " "; 
+            cout << currLead << "hello "; 
         }
     }
 }
