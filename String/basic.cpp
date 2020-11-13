@@ -22,6 +22,7 @@ int main(){
      cout <<"hello";
      cout <<"hi hello";
      cout <<"hello"; 
+     cout <<"hey";
 
     int arr[26] = {0};
     // this is used for count 
