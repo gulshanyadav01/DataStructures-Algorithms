@@ -12,6 +12,7 @@ int main(){
 
     // string s= "geeksforgeeks";
      cout << 'hello'; 
+     cout << "hi";
     int arr[26] = {0};
     // this is used for count 
     // for(int i = 0; i<26; i++){
