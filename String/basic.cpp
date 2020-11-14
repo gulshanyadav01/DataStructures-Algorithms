@@ -39,8 +39,10 @@ int main(){
         
     // }
     string str ;
+    
     getline(cin, str);
     cout << str; 
+    cout << str.substr(0,4);
     return 0;
 
 }
