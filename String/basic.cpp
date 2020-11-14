@@ -24,6 +24,7 @@ int main(){
      cout <<"hello"; 
      cout <<"hey";
      cout <<"hello";
+     cout <<arr[0];
      
 
     int arr[26] = {0};
