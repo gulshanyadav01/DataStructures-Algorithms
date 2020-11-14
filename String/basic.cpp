@@ -43,6 +43,7 @@ int main(){
     getline(cin, str);
     cout << str; 
     cout << str.substr(0,4);
+    cout << "happy diwali "; 
     return 0;
 
 }
