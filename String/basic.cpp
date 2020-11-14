@@ -47,6 +47,7 @@ int main(){
     string str1 = 'happy diwali '; 
     cout << str1.substr(0,4);
     return 0;
+    return 0;
     
 
 }
