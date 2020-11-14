@@ -26,8 +26,7 @@ int main(){
      cout <<"hello";
      cout <<arr[0];
      cout << "happy diwali";
-     
-
+     cout << "hello bhai happy diwali "; 
     int arr[26] = {0};
     // this is used for count 
     // for(int i = 0; i<26; i++){
