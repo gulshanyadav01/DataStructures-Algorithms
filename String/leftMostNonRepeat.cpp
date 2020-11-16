@@ -26,4 +26,3 @@ int main(){
     cout << leftMostNonRepeat(s); 
     return 0;
 }
-return 0;
