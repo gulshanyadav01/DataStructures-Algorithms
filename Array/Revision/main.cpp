@@ -1,5 +1,5 @@
 
-#include<iostream>
+#include <iostream>
 #include "removeDup.h"
 #include "secondLar.h"
 #include "leftRotate.h"
@@ -11,6 +11,7 @@
 #include "stock.h"
 #include "rainWater.h"
 #include "maxConsec1.h"
+#include "maxSumArray.h"
 using namespace std;
 
 
@@ -34,6 +35,7 @@ int main() {
     // cout << rainWater1(arr, num);
     // cout << rainWater2(arr, num);
     // cout << maxConsec1(arr, num); 
-    cout << maxConsec2(arr, num); 
+    // cout << maxConsec2(arr, num); 
+    cout << maxSumArray(arr, num); 
     return 0;
 }
