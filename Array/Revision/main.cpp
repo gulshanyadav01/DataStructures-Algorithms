@@ -8,6 +8,7 @@
 #include "leader.h"
 #include "maxDiff.h"
 #include "freq.h"
+#include "stock.h"
 using namespace std;
 
 
@@ -26,6 +27,7 @@ int main() {
     // leftRotateByD(arr, num); 
     // leader(arr, num); 
     // cout << maxDiff(arr, num); 
-    freq(arr, num); 
+    // freq(arr, num); 
+    cout << stockSell(arr, num);
     return 0;
 }

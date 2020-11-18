@@ -12,6 +12,3 @@ void leader(int arr[], int num){
         }
     }
 }
-
-
-return ; 
