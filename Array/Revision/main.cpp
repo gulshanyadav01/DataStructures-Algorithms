@@ -9,6 +9,7 @@
 #include "maxDiff.h"
 #include "freq.h"
 #include "stock.h"
+#include "rainWater.h"
 using namespace std;
 
 
@@ -28,6 +29,7 @@ int main() {
     // leader(arr, num); 
     // cout << maxDiff(arr, num); 
     // freq(arr, num); 
-    cout << stockSell(arr, num);
+    // cout << stockSell(arr, num);
+    cout << rainWater1(arr, num);
     return 0;
 }
