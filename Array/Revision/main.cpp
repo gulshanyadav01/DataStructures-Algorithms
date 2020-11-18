@@ -30,6 +30,7 @@ int main() {
     // cout << maxDiff(arr, num); 
     // freq(arr, num); 
     // cout << stockSell(arr, num);
-    cout << rainWater1(arr, num);
+    // cout << rainWater1(arr, num);
+    cout << rainWater2(arr, num);
     return 0;
 }
