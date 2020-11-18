@@ -10,6 +10,7 @@
 #include "freq.h"
 #include "stock.h"
 #include "rainWater.h"
+#include "maxConsec1.h"
 using namespace std;
 
 
@@ -31,6 +32,8 @@ int main() {
     // freq(arr, num); 
     // cout << stockSell(arr, num);
     // cout << rainWater1(arr, num);
-    cout << rainWater2(arr, num);
+    // cout << rainWater2(arr, num);
+    // cout << maxConsec1(arr, num); 
+    cout << maxConsec2(arr, num); 
     return 0;
 }
