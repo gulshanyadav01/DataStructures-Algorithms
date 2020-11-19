@@ -14,6 +14,7 @@
 #include "maxSumArray.h"
 #include "longestEvenOdd.h"
 #include "circularSum.h"
+#include "majorityElem.h"
 using namespace std;
 
 
@@ -41,6 +42,7 @@ int main() {
     // cout << maxSumArray(arr, num); 
 //    cout<<  maxSumArray2(arr, num); 
 //    cout<< longestEvenOdd(arr, num); 
-   cout << circularSum(arr, num); 
+//    cout << circularSum(arr, num); 
+cout << majorityElem(arr, num); 
     return 0;
 }
