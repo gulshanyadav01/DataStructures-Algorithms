@@ -43,6 +43,7 @@ int main() {
 //    cout<<  maxSumArray2(arr, num); 
 //    cout<< longestEvenOdd(arr, num); 
 //    cout << circularSum(arr, num); 
-cout << majorityElem(arr, num); 
+// cout << majorityElem(arr, num);
+cout << majorityElem2(arr, num);  
     return 0;
 }
