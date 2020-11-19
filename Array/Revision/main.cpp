@@ -36,6 +36,7 @@ int main() {
     // cout << rainWater2(arr, num);
     // cout << maxConsec1(arr, num); 
     // cout << maxConsec2(arr, num); 
-    cout << maxSumArray(arr, num); 
+    // cout << maxSumArray(arr, num); 
+   cout<<  maxSumArray2(arr, num); 
     return 0;
 }

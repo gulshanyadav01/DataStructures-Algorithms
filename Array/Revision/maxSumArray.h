@@ -15,3 +15,16 @@ int maxSumArray(int arr[], int num){
     }
     return res; 
 }
+
+// this is the efficient solution 
+
+int maxSumArray2(int arr[], int num){
+    int res = arr[0]; 
+     int sum = arr[0]; 
+    for(int i = 1; i< num; i++){
+       sum = max(sum+ arr[i], arr[i]); 
+       res = max(res, sum); 
+        
+    }
+    return res; 
+}
