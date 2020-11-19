@@ -13,6 +13,7 @@
 #include "maxConsec1.h"
 #include "maxSumArray.h"
 #include "longestEvenOdd.h"
+#include "circularSum.h"
 using namespace std;
 
 
@@ -39,6 +40,7 @@ int main() {
     // cout << maxConsec2(arr, num); 
     // cout << maxSumArray(arr, num); 
 //    cout<<  maxSumArray2(arr, num); 
-   cout<< longestEvenOdd(arr, num); 
+//    cout<< longestEvenOdd(arr, num); 
+   cout << circularSum(arr, num); 
     return 0;
 }
