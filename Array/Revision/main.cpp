@@ -12,6 +12,7 @@
 #include "rainWater.h"
 #include "maxConsec1.h"
 #include "maxSumArray.h"
+#include "longestEvenOdd.h"
 using namespace std;
 
 
@@ -37,6 +38,7 @@ int main() {
     // cout << maxConsec1(arr, num); 
     // cout << maxConsec2(arr, num); 
     // cout << maxSumArray(arr, num); 
-   cout<<  maxSumArray2(arr, num); 
+//    cout<<  maxSumArray2(arr, num); 
+   cout<< longestEvenOdd(arr, num); 
     return 0;
 }
