@@ -15,6 +15,7 @@
 #include "longestEvenOdd.h"
 #include "circularSum.h"
 #include "majorityElem.h"
+#include "minFlip.h"
 using namespace std;
 
 
@@ -44,6 +45,7 @@ int main() {
 //    cout<< longestEvenOdd(arr, num); 
 //    cout << circularSum(arr, num); 
 // cout << majorityElem(arr, num);
-cout << majorityElem2(arr, num);  
+// cout << majorityElem2(arr, num); 
+minFlip(arr, num); 
     return 0;
 }

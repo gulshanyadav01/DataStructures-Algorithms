@@ -1,6 +1,6 @@
 /*
 author : gulshan yadav
-date : 18-NOV-2020
+date : 19-NOV-2020
 */
 
 int longestEvenOdd(int arr[], int num){
