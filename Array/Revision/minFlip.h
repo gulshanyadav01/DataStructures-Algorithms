@@ -18,3 +18,4 @@ void  minFlip(int arr[], int num){
         cout << (num-1)<< endl;
     }
 }
+return 0;
