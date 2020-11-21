@@ -15,6 +15,6 @@ void  minFlip(int arr[], int num){
         }
     }
     if(arr[num-1] != arr[0]){
-        cout << (num-1)<< endl;
+        cout << (num-1)<< endl
     }
 }
