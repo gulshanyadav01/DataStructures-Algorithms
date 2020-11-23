@@ -2,6 +2,8 @@
 author : gulshan yadav
 date : 19-NOV-2020
 */
+// this is the naive approach 
+// time complexity of this appraoch is Q(N^2); 
 
 int circularSum(int arr[], int num){
     int res = arr[0]; 
