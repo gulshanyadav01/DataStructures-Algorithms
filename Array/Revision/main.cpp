@@ -16,6 +16,7 @@
 #include "circularSum.h"
 #include "majorityElem.h"
 #include "minFlip.h"
+#include "maxSumKCons.h"
 using namespace std;
 
 
@@ -27,6 +28,9 @@ int main() {
     for(int i = 0; i< num; i++){
         cin >> arr[i];
     }
+    cout << "enter the value of k also"; 
+    int k; 
+    cin >> k; 
     // cout << secondLargest(arr, num); 
     //  removeDup(arr, num); 
     // moveZeroToEnd(arr, num); 
@@ -46,6 +50,7 @@ int main() {
 //    cout << circularSum(arr, num); 
 // cout << majorityElem(arr, num);
 // cout << majorityElem2(arr, num); 
-minFlip(arr, num); 
+// minFlip(arr, num); 
+cout << maxSumKCons(arr,num, k);
     return 0;
 }
