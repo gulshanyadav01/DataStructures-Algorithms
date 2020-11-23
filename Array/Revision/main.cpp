@@ -17,6 +17,7 @@
 #include "majorityElem.h"
 #include "minFlip.h"
 #include "maxSumKCons.h"
+
 using namespace std;
 
 
@@ -51,6 +52,7 @@ int main() {
 // cout << majorityElem(arr, num);
 // cout << majorityElem2(arr, num); 
 // minFlip(arr, num); 
-cout << maxSumKCons(arr,num, k);
+// cout << maxSumKCons(arr,num, k);
+cout << maxSum2(arr, num, k); 
     return 0;
 }
