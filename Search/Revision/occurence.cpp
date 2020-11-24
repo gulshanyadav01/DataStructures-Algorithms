@@ -4,6 +4,7 @@ date: 24-NOV-2020
 */
 #include<iostream>
 using namespace std;
+
 int firstOccur(int arr[], int num, int low, int high, int key){
     if(low > high){
         return -1; 
@@ -27,6 +28,30 @@ int firstOccur(int arr[], int num, int low, int high, int key){
     }
 }
 
+// this is the code for the last occurence 
+
+int lastOccurence(int arr[], int num, int low, int high, int key){
+    if(low> high){
+        return  -1; 
+    }
+    int mid = (low + high)/2; 
+    if(arr[mid] < key){
+        return lastOccurence(arr, num, mid+1, high, key); 
+        
+    }
+    else if (arr[mid] > key){
+        return lastOccurence(arr, num, low, mid-1, key);
+    }
+    else{
+        if(mid == num-1 || arr[mid] != arr[mid+1]){
+            return mid; 
+        }
+        else {
+            return lastOccurence(arr, num, mid+1, high, key); 
+        }
+    }
+}
+
 int main(){
     int num; 
     cin >> num; 
@@ -38,5 +63,7 @@ int main(){
     int key; 
     cin >> key; 
     cout << firstOccur(arr, num, 0, num-1, key); 
+    cout << endl;
+    cout << lastOccurence(arr, num, 0, num-1, key); 
     return 0;
 }   
