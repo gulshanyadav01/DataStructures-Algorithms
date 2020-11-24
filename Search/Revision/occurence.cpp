@@ -5,6 +5,7 @@ date: 24-NOV-2020
 #include<iostream>
 using namespace std;
 
+// this is the code for the first occurence of the element
 int firstOccur(int arr[], int num, int low, int high, int key){
     if(low > high){
         return -1; 
@@ -52,6 +53,17 @@ int lastOccurence(int arr[], int num, int low, int high, int key){
     }
 }
 
+// count of occurence of the element 
+
+int countOccur(int arr[], int num, int low, int high, int key){
+    int first = firstOccur(arr, num,low, high, key);
+    if(first == -1){
+        return 0;
+    }
+    return (lastOccurence(arr, num, 0, num-1, key)- first +1); 
+}
+
+
 int main(){
     int num; 
     cin >> num; 
@@ -62,8 +74,9 @@ int main(){
 
     int key; 
     cin >> key; 
-    cout << firstOccur(arr, num, 0, num-1, key); 
-    cout << endl;
-    cout << lastOccurence(arr, num, 0, num-1, key); 
+    // cout << firstOccur(arr, num, 0, num-1, key); 
+    // cout << endl;
+    // cout << lastOccurence(arr, num, 0, num-1, key); 
+    cout << countOccur(arr, num,0, num-1, key); 
     return 0;
 }   
