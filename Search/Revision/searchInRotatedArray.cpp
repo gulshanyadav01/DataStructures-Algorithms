@@ -10,8 +10,9 @@ bool searchInRotatedArray(int arr[], int num, int key){
     int high = num -1; 
     while(low<= high){
         int mid = (low+high)/2;
+        cout << mid<<endl;
         if(arr[mid] == key){
-            cout << arr[mid]<<""; 
+            // cout << arr[mid]<<""; 
             return mid; 
         } 
         if(arr[low]< arr[mid]){
