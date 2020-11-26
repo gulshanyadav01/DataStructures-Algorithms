@@ -29,6 +29,21 @@ int repeatingElem2(int arr[], int num){
     }
     return -1; 
 }
+
+// efficient solution 
+int repeatingElem3(int arr[], int num){
+    bool visited[256] = {0}; 
+    for(int i =0; i< num; i++){
+        if(visited[arr[i]]){
+            return arr[i]; 
+        }
+        else { 
+            visited[arr[i]] = {1}; 
+        }
+    }
+    return -1; 
+}
+
 int main(){
     int num; 
     cin >> num; 
@@ -36,7 +51,8 @@ int main(){
     for(int i = 0; i< num; i++){
         cin >> arr[i]; 
     }
-    cout << repeatingElem(arr, num); 
-    cout << repeatingElem2(arr, num); 
+    // cout << repeatingElem(arr, num); 
+    // cout << repeatingElem2(arr, num); 
+    cout << repeatingElem3(arr, num); 
     return 0; 
 }
