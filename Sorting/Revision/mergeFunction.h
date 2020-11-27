@@ -2,6 +2,7 @@
 author: "gulshan yadav"
 date: 27-NOV-2020
 */
+hello world 
 
 void mergeFunction(int arr[], int num, int low, int high, int mid){
     int arr2[num]; 
