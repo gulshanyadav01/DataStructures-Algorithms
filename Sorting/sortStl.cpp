@@ -9,7 +9,8 @@ using namespace std;
 int main(){
     int n=4;
     int arr[n] = {20, 5, 7, 10};
-    sort(arr, arr+n);
+    // sort(arr, arr+n);
+    sort(arr, arr+n, greater<int>());
     
     for(int x: arr){
         cout << x << " ";
