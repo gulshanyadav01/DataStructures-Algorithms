@@ -6,6 +6,7 @@ date: 28-NOV-2020
 #include<iostream>
 using namespace std;
 // this is the efficient solution
+// time complexity is Q(m+n)
 void intersectionOfSortedArray(int arr1[], int arr2[], int num1, int num2){
     int i = 0; 
     int j = 0; 
