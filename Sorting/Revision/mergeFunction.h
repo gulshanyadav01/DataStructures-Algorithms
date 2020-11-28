@@ -40,7 +40,7 @@ void mergeFunction(int arr[], int num, int low, int high, int mid){
 
 // this approach is by creating two aux array 
 // and then copy into them 
-void mergeFunction2(int arr[], int num, int low, int mid, int high){
+void mergeFunction2(int arr[], int low, int mid, int high){
     int num1 = mid - low + 1; 
     int num2 = high - mid;
     int arr1[num1]; 
@@ -73,8 +73,17 @@ void mergeFunction2(int arr[], int num, int low, int mid, int high){
     }
 
 }
-void merge(int arr[], int num){
-    // mergeFunction(arr, num, 0, 8, 3); 
-    mergeFunction2(arr, num, 0,3, 8 ); 
+// void merge(int arr[], int num){
+//     // mergeFunction(arr, num, 0, 8, 3); 
+//     mergeFunction2(arr, num, 0,3, 8 ); 
 
+// }
+
+void mergeSort(int arr[], int low, int high){
+    if(high>low){
+        int mid = (low+high)/2; 
+        mergeSort(arr, low, mid); 
+        mergeSort(arr, mid+1, high); 
+        mergeFunction2(arr, low, mid, high); 
+    }
 }

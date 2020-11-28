@@ -16,7 +16,7 @@ int main(){
         cin >> arr[i]; 
     }
     // insertionSort(arr, num);
-    merge(arr, num); 
+    mergeSort(arr, 0, num-1); 
 
     for(int i = 0; i< num; i++){
         cout << arr[i] << " "; 
