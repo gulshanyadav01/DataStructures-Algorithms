@@ -4,7 +4,7 @@ date: 27-NOV-2020
 */
  
 // this is by creating the whole array
-
+// time complexity is Q(m*n)log(m+n)
 void mergeFunction(int arr[], int num, int low, int high, int mid){
     int arr2[num]; 
     int k = 0; 
