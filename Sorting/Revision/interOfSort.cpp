@@ -8,7 +8,7 @@ using namespace std;
 // this is the efficient solution
 // time complexity is Q(m+n)
 void intersectionOfSortedArray(int arr1[], int arr2[], int num1, int num2){
-    int i = 0
+    int i = 0;
     int j = 0; 
     while(i< num1 && j< num2){
         if(i> 0 && arr1[i] == arr1[i-1]){
