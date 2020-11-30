@@ -23,6 +23,6 @@ int secondLargest(int arr[], int num){
             res = arr[i]; 
         }
     }
-    return res; 
+    return res;
 }
 
