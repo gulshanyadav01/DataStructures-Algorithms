@@ -35,6 +35,29 @@ void sortOfThreeType(int arr[], int low, int high){
     }
 }
 
+// partition around the given range 
+
+void partitionAroundRange(int arr[], int low, int high){
+    int mid = 0; 
+    while(low<= high){
+        if(arr[mid]< 5){
+            swap(arr[low], arr[mid]);
+            low++;
+            mid++;
+            continue;
+        }
+        if(arr[mid]>= 5 && arr[mid]<= 10){
+            mid++; 
+            continue;
+        }
+        if(arr[mid]> 10){
+            swap(arr[mid], arr[high]);
+            high--; 
+            continue;
+        }
+    }
+}
+
 int main(){
     int num; 
     cin >> num; 
@@ -42,7 +65,8 @@ int main(){
     for(int i = 0; i< num; i++){
         cin >> arr[i]; 
     }
-    sortOfThreeType(arr, 0, num-1); 
+    // sortOfThreeType(arr, 0, num-1); 
+    partitionAroundRange(arr, 0, num-1); 
 
     for(int i = 0; i< num; i++){
         cout << arr[i] << " "; 
