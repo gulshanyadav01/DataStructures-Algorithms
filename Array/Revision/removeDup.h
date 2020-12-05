@@ -24,3 +24,4 @@ void removeDup(int arr[], int num){
         cout << arr[i]<<" "; 
     }
 }
+
