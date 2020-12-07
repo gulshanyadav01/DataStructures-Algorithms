@@ -9,7 +9,7 @@ int rainWater1(int arr[], int num){
     int res =0; 
     for(int i = 1; i< num-1; i++){
         int lmax = arr[i]; 
-        for(int j =0; j< i; j++){
+        for(int j = 0; j< i; j++){
             lmax = max(lmax, arr[j]); 
         }
         int rmax = arr[i]; 
