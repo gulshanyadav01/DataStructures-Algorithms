@@ -9,7 +9,7 @@ void print(int arr[], int num){
             if(arr[i] != arr[0]){
                 print i to ; 
             }
-            else print i-1;
+            else print i-1
         }
         
     }
