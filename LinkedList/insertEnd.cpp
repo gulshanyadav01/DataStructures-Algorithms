@@ -37,7 +37,7 @@ int main(){
     head = insertEnd(head, 10); 
     head = insertEnd(head, 20);
     head = insertEnd(head, 30);
-    printLinkedList(head)
+    printLinkedList(head);
     return 0; 
 }
 
