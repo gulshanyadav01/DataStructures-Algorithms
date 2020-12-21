@@ -19,9 +19,15 @@ class Node {
 
 int main(){
 
-    Node *head = new Node(10); 
-    cout << head->data<< "\n";
-    cout << head<< endl;
+    Node *head = new Node(10);
+    Node *temp1 = new Node(20); 
+    Node *temp2 = new Node(30);
+    head->next = temp1; 
+    temp1->next = temp2; 
+    while(head != NULL){
+        cout << head->data<< "\n"; 
+        head = head->next; 
+    }
     return 0; 
 
 }
