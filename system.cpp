@@ -9,6 +9,6 @@ int main(){
     if(s == "y"){
         system("start https://www.youtube.com/");
     }
-    return 0;
+    
     return 0;
 }
