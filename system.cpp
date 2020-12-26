@@ -7,7 +7,7 @@ int main(){
     cout << "enter the string to open channel \n";
     getline(cin, s); 
     if(s == "y"){
-        system("start https://www.youtube.com/")
+        system("start https://www.youtube.com/");
     }
     
     return 0;
