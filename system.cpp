@@ -3,7 +3,8 @@
 // #include<system>
 using namespace std; 
 int main(){
-    string s; 
+    string s;
+    cin >>s;  
     cout << "enter the string to open channel \n";
     getline(cin, s); 
     if(s == "y"){
