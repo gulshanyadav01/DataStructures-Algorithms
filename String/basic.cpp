@@ -5,7 +5,7 @@ Date: 24-oct-2020
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-// this is gulshan yadav
+
 
 int main(){
     char x= 'a';
