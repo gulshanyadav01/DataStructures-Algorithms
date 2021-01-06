@@ -14,7 +14,7 @@ int main(){
     // string s= "geeksforgeeks";
      cout << 'hello'; 
      cout << "hi";
-     cout << "hello"<<"/n";
+     cout << "hello";
      cout << "hi";
      cout << "hi";
      cout << "hello";
