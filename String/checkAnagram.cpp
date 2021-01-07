@@ -4,6 +4,7 @@ Date: 24-oct-2020
 */
 #include<iostream>
 #include<bits/stdc++.h>
+#include<string>
 using namespace std;
 const int CHAR = 256;
 // naive solution 
