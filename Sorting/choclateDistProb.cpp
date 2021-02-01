@@ -2,8 +2,12 @@
 author: *gulshan yadav*
 date: 19-oct-2020
 */
+
 #include<iostream>
 #include<algorithm>
+#include<vector>
+#include <string>
+// #include<bits/stdc++.h>
 using namespace std;
 int choclateDistProb(int arr[], int num, int child){
     sort(arr, arr+num);
