@@ -26,7 +26,7 @@ Node *insertAtGiven(Node *head, int pos, int data){
     }
     temp->next = curr->next; 
     curr->next = temp; 
-    return head
+    return head;
 
 }
 
