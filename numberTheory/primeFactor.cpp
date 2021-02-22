@@ -17,7 +17,7 @@ void  primeFactor(int num){
         if(isPrime(i)){
             int  x = i;
             while(num% x ==0){
-                cout << i << endl;
+                cout << i << "\n";
                 x *= i;
             }
         }
@@ -32,12 +32,12 @@ void primeFactor2(int num){
     }
     for(int i = 2; i*i <= num; i++){
         while( num% i == 0){
-            cout << i << endl;
+            cout << i << "\n";
             num /= i;
         }
     }
     if(num > 1){
-        cout << num << endl;
+        cout << num << "\n";
     
     }
 
