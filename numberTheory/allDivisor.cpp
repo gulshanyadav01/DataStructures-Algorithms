@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void print(){
-    cout<<"hello"<<endl;
+    cout<<"hello"<<"\n";
 }
 void printAllDivisor2(int num){
     for(int i = 1; i*i<= num; i++){
