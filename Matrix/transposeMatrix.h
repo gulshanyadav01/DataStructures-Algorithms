@@ -36,7 +36,7 @@ void printTranspose(vector<vector<int>> &arr){
         for(int j = 0; j< arr[i].size(); j++){
             cout << arr[i][j] << " ";
         }
-        cout << endl;
+        cout << "\n"; 
     }
 }
 
