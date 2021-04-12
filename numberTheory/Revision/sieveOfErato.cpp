@@ -27,4 +27,5 @@ int main(){
     cin >> num; 
     sieve(num); 
     return 0;
+    
 }
