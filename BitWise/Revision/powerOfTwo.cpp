@@ -25,5 +25,5 @@ int main(){
     cin >> num; 
     // cout << powerOfTwo(num);
     cout << isPowerTwo(num); 
-    return 0
+    return 0;
 }
