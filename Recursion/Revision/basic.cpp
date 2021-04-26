@@ -20,10 +20,18 @@ int  fun2(int n){
     return 1+ fun2(n/2); 
 
 }
+void fun3(int n){
+    if(n == 0 ){
+        return; 
+    }
+    fun3(n/2); 
+    cout << n%2 << " "; 
+}
 int main(){
     int n; 
     cin >> n; 
     // fun(n); 
-    cout << fun2(n); 
+    // cout << fun2(n); 
+     fun3(n); 
     return 0; 
 }
