@@ -21,4 +21,5 @@ int main(){
     char a, b, c; 
     cin >> a >> b >>c; 
     Toh(3, a, b, c );
+    return 0; 
 }
