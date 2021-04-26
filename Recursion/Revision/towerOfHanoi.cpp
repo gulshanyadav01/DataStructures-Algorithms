@@ -11,7 +11,7 @@ void Toh(int num, char a , char b, char c){
         return; 
     }
     Toh(num-1, a, c,  b); 
-    cout << "move disk "<< num <<" from "  << a <<" to " << c<< endl;
+    cout << "move disk "<< num <<" from "  << a <<" to " << c << endl;
     Toh(num-1, b, a, c); 
 }
 
