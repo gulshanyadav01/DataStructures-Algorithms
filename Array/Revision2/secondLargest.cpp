@@ -39,5 +39,6 @@ int main(){
         cin >> arr[i]; 
     }
     cout << secondLargest(arr, num)<<endl;
-    return 0; 
+    return 0;
+    
 }
