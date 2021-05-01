@@ -53,7 +53,7 @@ int secondLargest2(int arr[], int num){
 
         }
     }
-    return res;
+    return res
 }
 int main(){
     int num; 
