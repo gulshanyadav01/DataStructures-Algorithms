@@ -31,6 +31,30 @@ int secondLargest(int arr[], int num){
     return res; 
 
 }
+
+// this is the efficient solution of this problem 
+
+int secondLargest2(int arr[], int num){
+    int res = -1; 
+    int lar = arr[0]; 
+    for(int i = 1; i< num; i++){
+        if(arr[i]  > lar){
+            res = lar; 
+            lar = arr[i]; 
+        }
+        else if(arr[i]!= lar){
+            if(res == -1){
+                lar = arr[i]; 
+            }
+            else if(arr[i]>res ){
+                res = arr[i]; 
+            }
+
+
+        }
+    }
+    return res; 
+}
 int main(){
     int num; 
     cin >> num; 
@@ -38,7 +62,7 @@ int main(){
     for(int i = 0; i< num; i++){
         cin >> arr[i]; 
     }
-    cout << secondLargest(arr, num)<<endl;
+    cout << secondLargest2(arr, num)<<endl;
     return 0;
     
 }
