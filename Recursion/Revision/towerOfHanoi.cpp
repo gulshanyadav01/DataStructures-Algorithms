@@ -20,6 +20,6 @@ int main(){
     cin >> num; 
     char a, b, c; 
     cin >> a >> b >>c; 
-    Toh(3, a, b, c );
+    Toh(num, a, b, c );
     return 0; 
 }
