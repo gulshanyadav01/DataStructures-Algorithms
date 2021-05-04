@@ -19,6 +19,21 @@ void leaderArray(int arr[], int num){
         }
     }
 }
+
+// efficient solution 
+
+void leader(int arr[], int num){
+    int lead = arr[num-1]; 
+    cout << lead<<" "; 
+    for(int i = num-2; i>= 0; i--){
+        if(arr[i]> lead){
+            cout << arr[i]<<" " ; 
+            lead = arr[i]; 
+        }
+    }
+    
+}
+
 int main(){
     int num; 
     cin >> num; 
@@ -26,6 +41,7 @@ int main(){
     for(int i = 0; i< num; i++){
         cin >> arr[i]; 
     }
-    leaderArray(arr, num);
+    // leaderArray(arr, num);
+    leader(arr, num); 
     return 0; 
 }
