@@ -15,6 +15,9 @@ void Toh(int num, char a , char b, char c){
     Toh(num-1, b, a, c); 
 }
 
+// tower of hanoi 
+
+
 void TowerOfHanoi(int num, char a, char b, char c){
     if(num ==1 ){
         cout << "move disk" << num << "from" << a << "to" << c << endl;
