@@ -31,6 +31,6 @@ int main(){
     char a, b, c; 
     cin >> a >> b >>c; 
     Toh(num, a, b, c );
-    TowerOfHanoi(num, a, b, c)
+    TowerOfHanoi(num, a, b, c);
     return 0; 
 }
