@@ -17,6 +17,7 @@ void Toh(int num, char a , char b, char c){
 
 // tower of hanoi 
 // time complexit of this algorithm is Q(2^N)
+// because it has recurrence relation of T(n) = 2T(n-1)+1;
 
 void TowerOfHanoi(int num, char a, char b, char c){
     if(num ==1 ){
@@ -35,5 +36,6 @@ int main(){
     cin >> a >> b >>c; 
     Toh(num, a, b, c );
     TowerOfHanoi(num, a, b, c);
+    TowerOfHanoi(num, a, b, c); 
     return 0; 
 }
