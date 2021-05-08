@@ -37,5 +37,5 @@ int main(){
     Toh(num, a, b, c );
     TowerOfHanoi(num, a, b, c);
     TowerOfHanoi(num, a, b, c);
-    return 0
+    return 0;
 }
