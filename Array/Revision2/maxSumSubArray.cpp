@@ -29,7 +29,7 @@ int maxSum(int arr[], int num){
         res  = max(res, sum);
 
     }
-    return sum; 
+    return res; 
 }
 
 // again max sum sub array 
@@ -37,7 +37,7 @@ int maxSum(int arr[], int num){
     int res = arr[0]; 
     int sum = arr[0];  
     for(int i = 0; i< num; i++){
-        sum += max(sum+arr[i], arr[i]); 
+        sum = max(sum+arr[i], arr[i]); 
         res = max(res, sum); 
 
     }
@@ -52,6 +52,5 @@ int main(){
         cin >> arr[i]; 
     }
     cout << maxSumSubArray(arr, num); 
-    // cout << maxSum(arr, num); 
     return 0; 
 }
