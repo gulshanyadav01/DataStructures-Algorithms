@@ -32,6 +32,18 @@ int maxSum(int arr[], int num){
     return sum; 
 }
 
+// again max sum sub array 
+int maxSum(int arr[], int num){
+    int res = arr[0]; 
+    int sum = arr[0];  
+    for(int i = 0; i< num; i++){
+        sum += max(sum+arr[i], arr[i]); 
+        res = max(res, sum); 
+
+    }
+    return res; 
+}
+
 int main(){
     int num; 
     cin >> num; 
