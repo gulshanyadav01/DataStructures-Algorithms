@@ -30,5 +30,5 @@ int main(){
         cin >> arr[i]; 
     }
     cout << circularSum(arr, num); 
-    return 0; 
+    
 }
