@@ -23,10 +23,11 @@ int maxSumKConsElem(int arr[], int num, int k ){
 // then add one to it and subtract one to it
 int maxSum(int arr[], int num, int k){
     int windowSum = 0; 
-    int res =  INT_MIN; 
+    
     for(int i= 0; i< k; i++ ){
         windowSum += arr[i];
     }
+    int res =  windowSum; 
     for(int i = 0; i< num-k; i++){
         windowSum = windowSum-arr[i] + arr[k+i];
         res = max(res, windowSum);
