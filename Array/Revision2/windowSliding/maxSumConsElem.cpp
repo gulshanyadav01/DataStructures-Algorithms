@@ -32,7 +32,7 @@ int maxSum(int arr[], int num, int k){
         windowSum = windowSum-arr[i] + arr[k+i];
         res = max(res, windowSum);
     }
-    return res; 
+    return res
     
 }
 
