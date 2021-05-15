@@ -19,6 +19,22 @@ int binarySearch(int arr[], int num, int key){
     return -1; 
 }
 
+// binary search recursively
+
+int binary(int arr[], int num,int low, int high,  int key){
+    if(low > high) return -1; 
+    int mid = (low+high)/2; 
+    if(arr[mid] == key) return mid; 
+    else if(arr[mid] > key){
+       return  binary(arr, num, low, mid-1, key);
+
+    }
+    else if(arr[mid] < key) {
+       return  binary(arr, num, mid+1, high, key);
+    }
+    
+}
+
 int main(){
     int num; 
     cin >> num; 
@@ -29,5 +45,7 @@ int main(){
     int key;
     cin >> key; 
     cout << binarySearch(arr, num, key);
+    cout <<"\n"; 
+    cout << binary(arr, num, 0, num-1, key);
     return 0; 
 }
