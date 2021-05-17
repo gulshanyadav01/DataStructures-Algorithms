@@ -69,7 +69,7 @@ int main(){
     for(int i = 0; i< num2;i++){
         cin >> arr2[i]; 
     }
-    // cout << median (arr1, arr2, num1, num2); 
+    cout << median (arr1, arr2, num1, num2); 
     cout << getMedian(arr1, arr2, num1, num2); 
     return 0; 
 }
