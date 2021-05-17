@@ -17,10 +17,11 @@ int pairSum(int arr[], int low, int high, int sum){
     return false; 
 }
 
-bool tripletSum(int arr[], int  num, int sum ){
+bool  tripletSum(int arr[], int  num, int sum ){
+    int count = 0; 
     for(int i = 0; i< num; i++){
         if(pairSum(arr, i+1, num-1, sum-arr[i])){
-            return true; 
+            return true;
         }
     }
     return false; 
