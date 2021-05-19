@@ -58,6 +58,6 @@ int main(){
     cin >> key; 
     cout << firstOccurence(arr, num, 0, num-1, key);
     cout << "\n"; 
-    cout << firstOccurence2(arr, num, key); 
+    cout << firstOccurence2(arr, num, key)
     return 0; 
 }
