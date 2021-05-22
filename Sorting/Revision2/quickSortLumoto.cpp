@@ -37,7 +37,7 @@ void quickSort1(int arr[], int l, int h){
 int main(){
     int num; 
     cin >> num; 
-    int arr[num]; 
+    int arr[num];
     for(int i = 0; i< num; i++){
         cin >> arr[i];
     }
