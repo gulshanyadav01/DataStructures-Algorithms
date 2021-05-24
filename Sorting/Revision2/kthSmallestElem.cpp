@@ -47,5 +47,5 @@ int main(){
     int k; 
     cin >> k; 
     cout << kthSmallestElem(arr, num, k);
-    return 0; 
+    return 0
 }
