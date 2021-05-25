@@ -37,6 +37,10 @@ void sortThreeType(int arr[], int num){
     }
 
 }
+
+// like variation of pivot is given 
+// like variation of range is given
+
 int main(){
     int num; 
     cin >> num; 
