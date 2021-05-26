@@ -7,6 +7,8 @@ date: 26-May-2021
 #include<vector>
 using namespace std; 
 
+// naive solution not general solution 
+
 void countingSort(int arr[], int num, int k ){
     int count[k]; 
     for(int i = 0; i< k; i++){
