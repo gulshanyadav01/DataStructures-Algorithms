@@ -11,7 +11,7 @@ using namespace std;
 void snakePattern(vector<vector<int>> &arr){
     for(int i = 0; i< arr.size(); i++){
         if(i%2 == 0){
-            for(int j = 0; j< arr[i].size()-1; j++){
+            for(int j = 0; j< arr[i].size(); j++){
                 cout << arr[i][j]<<" "; 
             }
         }
