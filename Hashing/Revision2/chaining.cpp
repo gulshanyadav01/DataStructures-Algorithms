@@ -46,5 +46,6 @@ int main(){
     hello.insert(56); 
     hello.insert(72); 
     cout << hello.search(56);
+    cout << hello.search(4); 
     return 0; 
 }
