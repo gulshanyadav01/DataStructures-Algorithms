@@ -1,6 +1,6 @@
 /* 
 author: gulshan yadav
-date: 27-May-2021
+date: 27-May-2021 
 */
 #include<iostream>
 #include<bits/stdc++.h>
