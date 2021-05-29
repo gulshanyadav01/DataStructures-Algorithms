@@ -1,11 +1,12 @@
 /* 
 author: gulshan yadav
-date: 26-May-2021
+date: 27-May-2021
 */
 #include<iostream>
 #include<bits/stdc++.h>
 #include<vector>
 using namespace std;
+
 
 class myHash{
     public: 
@@ -47,5 +48,5 @@ int main(){
     hello.insert(72); 
     cout << hello.search(56);
     cout << hello.search(4); 
-    return 0;
+    return 0
 }
