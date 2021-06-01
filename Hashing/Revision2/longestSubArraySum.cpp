@@ -22,6 +22,27 @@ int longestSubArraySum(int arr[], int num, int sum){
     return res; 
 }
 
+// efficient solution 
+
+int longestSubArray(int arr[], int num, int sum){
+    int prefixSum = 0; 
+    int res = 0; 
+    unordered_map<int, int> m; 
+    for(int i =0; i< num; i++){
+        prefixSum += arr[i];
+        if(prefixSum == sum){
+            res = i+1; 
+        }
+        if(m.find(prefixSum) == m.end()){
+            m.insert({prefixSum, i});
+        }
+        if(m.find(prefixSum-sum)!= m.end()){
+            res = max(res, i-m[prefixSum-sum]);
+        }
+    }
+    return res; 
+}
+
 int main(){
     int num; 
     cin >> num; 
@@ -33,7 +54,7 @@ int main(){
     cin >> sum; 
     cout << longestSubArraySum(arr, num, sum); 
     cout << endl;
-    // cout << subArraySumZero(arr, num); 
+    cout << longestSubArray(arr, num, sum); 
     
     return 0; 
 }
