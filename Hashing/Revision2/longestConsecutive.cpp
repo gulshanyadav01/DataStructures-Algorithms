@@ -26,6 +26,24 @@ int longestConsecutive(int arr[], int num){
 
 }
 
+// efficient solution 
+
+int longestConsecutiveSub(int arr[], int num){
+    unordered_set<int> s; 
+    for(int i =0; i< num; i++){
+        s.insert(arr[i]);
+    }
+    int res =0; 
+    for(auto x: s){
+        if(s.find(x-1) == s.end()){
+            int curr = 1; 
+            while(s.find(x+curr) != s.end())curr++; 
+            res = max(curr, res);
+        }
+         
+    }return res; 
+}
+
 int main(){
     int num; 
     cin >> num; 
@@ -34,5 +52,7 @@ int main(){
         cin >> arr[i];
     }
     cout << longestConsecutive(arr, num);
+    cout << endl;
+    cout << longestConsecutiveSub(arr, num); 
     return 0; 
 }
