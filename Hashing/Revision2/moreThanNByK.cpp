@@ -52,6 +52,4 @@ int main(){
     moreThanNByK(arr, num, k); 
     cout << endl;
     moreThan(arr, num, k); 
-
-    return 0; 
 }
