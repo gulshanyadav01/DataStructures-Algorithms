@@ -53,6 +53,22 @@ int leftMost3(string &s1){
 
 }
 
+// efficient solution 2
+
+int leftMost4(string &s1){
+    bool visited[256] = {false}; 
+    int res = -1; 
+    for(int i= s1.length()-1; i>=0; i--){
+        if(visited[s1[i]]){
+            res = i; 
+        }
+        else{
+            visited[s1[i]] = true; 
+        }
+    }
+    return res; 
+}
+
 int main(){
     string s1;
     cin >> s1; 
@@ -61,5 +77,7 @@ int main(){
     cout << leftMost2(s1); 
     cout << endl;
     cout << leftMost3(s1);
+    cout << endl;
+    cout << leftMost4(s1); 
     return 0; 
 }
