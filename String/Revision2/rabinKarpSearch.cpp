@@ -53,5 +53,5 @@ int main(){
     string pat; 
     cin >> pat; 
     rabinKarpSearch(txt, pat, 101); 
-    // return 0; 
+    return 0; 
 }
