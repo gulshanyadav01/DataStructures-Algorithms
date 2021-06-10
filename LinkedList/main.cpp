@@ -1,3 +1,10 @@
+/* 
+author: gulshan yadav
+date: 10-june-2021
+email: gulshany01@gmail.com
+*/
+#include<bits/stdc++.h>
+#include<vector>
 #include<iostream>
 #include "Node.h"
 using namespace std; 
