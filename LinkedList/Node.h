@@ -1,18 +1,11 @@
-/*
-author:"gulshan yadav",
-email:"gulshany01@gmail.com",
-date:"21-DEC-2020"
-*/
-
-
+#include<iostream>
+// #include<bits/stdc++.h>
 class Node {
-    public:
-    int data;
+    public: 
+    int data; 
     Node *next; 
-
     Node(int x){
         data = x; 
-        next = NULL;
+        next = NULL; 
     }
-};
-
+}; 
