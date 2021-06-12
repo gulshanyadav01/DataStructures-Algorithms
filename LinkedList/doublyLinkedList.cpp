@@ -19,6 +19,6 @@ int main(){
     temp1 -> next = temp2; 
     temp2-> prev = temp1; 
     print(head); 
-    
+    return 0; 
 
 }
