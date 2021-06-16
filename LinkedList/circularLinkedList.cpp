@@ -19,11 +19,20 @@ void printLinkedList(Node *head){
 
 }
 
+void printLinked(Node *head){
+    if(head == NULL) return; 
+    cout << head->data <<" "; 
+    for(Node *p = head->next; p != head; p = p->next){
+        cout << p->data<<" "; 
+    }
+}
+
 int main(){
     Node *head = new Node(1); 
     head ->next = new Node(2); 
     head->next->next = new Node(3); 
     head->next->next->next = head; 
-    printLinkedList(head); 
+    // printLinkedList(head); 
+    printLinked(head); 
     return 0; 
 }
