@@ -56,6 +56,6 @@ int main(){
     temp2->next = head; 
     head = deleteKthNode(head, 3);
     printLinkedList(head);
-    // return 0; 
+    return 0; 
 
 }
