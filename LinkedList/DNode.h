@@ -15,4 +15,4 @@ class Node{
         prev = NULL; 
         next = NULL; 
     }
-}; 
+};
