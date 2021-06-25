@@ -7,6 +7,7 @@ date: 24-jun-2021
 #include<bits/stdc++.h>
 using namespace std;
 
+
 class TwoStack{
     public:
     int *arr;
