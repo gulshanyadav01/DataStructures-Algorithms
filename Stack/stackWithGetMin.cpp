@@ -64,7 +64,7 @@ int main(){
     s.push(6);
     s.push(4);
     s.pop();
-    s.pop(); 
+    s.pop();
     s.push(2);
     s.pop(); 
     s.push(1); 
