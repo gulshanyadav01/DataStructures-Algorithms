@@ -21,12 +21,29 @@ void reverse(queue<int> &q){
     
 }
 
+// reverse the queue using stack 
+
+void reversing(queue<int> &q){
+    if(q.empty()) return;
+    int x = q.front();
+    q.pop();
+    reversing(q);
+    q.push(x);
+}
+
 int main(){
     queue<int> q; 
-    q.push(10);
+    q.push(12);
+    q.push(5);
+    q.push(15);
     q.push(20);
-    q.push(30);
-    reverse(q); 
+    // while (q.empty() == false)
+    // {
+    //     cout << q.front() << " ";
+    //     q.pop();
+    // }
+    
+    reversing(q); 
     while(q.empty() == false){
         cout << q.front() <<" ";
         q.pop();
