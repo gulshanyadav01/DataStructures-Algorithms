@@ -68,7 +68,8 @@ int main(){
     Q.enQueue(20);
     Q.enQueue(30);
     Q.deQueue();
-    Q.print();
+    cout << Q.front->data << endl;
+    cout << Q.rear -> data; 
     // cout << Q.getSize() ; 
     return 0; 
 }
