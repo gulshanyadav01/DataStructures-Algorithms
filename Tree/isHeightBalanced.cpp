@@ -26,6 +26,19 @@ bool heightBalanced(Node *root){
     ); 
 }
 
+// efficient solution 
+int isBalance(Node *root){
+    if(root == NULL) return 0; 
+    int lh = isBalance(root-> left);
+    if(lh == -1) return -1; 
+    int rh = isBalance(root-> right);
+    if(rh == -1) return -1; 
+    if(abs(lh - rh) > 1) return -1; 
+    else{
+        return max(lh, rh) + 1; 
+    }
+}
+
 int main(){
     Node *root = new Node(20);
     root->left = new Node(8);
@@ -33,5 +46,12 @@ int main(){
     root->left->left = new Node(3);
     root->left->right = new Node(5);
     cout << heightBalanced(root);
+    cout << endl;
+    if(isBalance(root) == -1){
+        cout << "No";
+    }
+    else{
+        cout << "yes"; 
+    }
     return 0; 
 }
