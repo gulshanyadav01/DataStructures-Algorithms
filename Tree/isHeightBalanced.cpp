@@ -51,7 +51,7 @@ int main(){
         cout << "No";
     }
     else{
-        cout << "yes"; 
+        cout << "yes";
     }
     return 0; 
 }
