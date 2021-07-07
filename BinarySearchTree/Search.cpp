@@ -3,7 +3,6 @@ author:gulshan yadav
 email: gulshany01@gmail.com
 date: 06-July-2021
 */
-// /home/gulshan/Desktop/geekForGeeks/Tree/Node.h
 #include<iostream>
 #include<bits/stdc++.h>
 #include "/home/gulshan/Desktop/geekForGeeks/Tree/Node.h"
