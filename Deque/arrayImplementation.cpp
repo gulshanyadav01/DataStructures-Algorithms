@@ -60,5 +60,6 @@ class Deque{
 
 int main(){
     Deque Q(4); 
+    
 
 }
