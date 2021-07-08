@@ -78,5 +78,5 @@ int main(){
     cout << endl;
     Node *hey = insertion(root,50); 
     printTree(hey);
-    
+    return 0; 
 }
