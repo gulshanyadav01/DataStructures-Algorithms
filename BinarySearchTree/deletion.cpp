@@ -65,5 +65,5 @@ int main(){
     cout << endl;
     root = deletion(root, 20);
     printTree(root);
-    return 0; 
+    // return 0; 
 }
