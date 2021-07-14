@@ -27,5 +27,6 @@ int main(){
     int k; 
     cin >> k; 
     Node *root; 
-    printKthSmallest(root,k); 
+    printKthSmallest(root,k);
+    return 0;  
 }
