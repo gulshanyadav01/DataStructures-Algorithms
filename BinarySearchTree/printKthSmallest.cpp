@@ -28,5 +28,5 @@ int main(){
     cin >> k; 
     Node *root; 
     printKthSmallest(root,k);
-    return 0;  
+    // return 0;  
 }
