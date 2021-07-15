@@ -8,6 +8,7 @@ date: 15-July-2021
 #include<map>
 #include "/home/gulshan/Desktop/geekForGeeks/Tree/Node.h"
 using namespace std;
+// int  prev = INT_MIN; 
 
 
 int maximum(Node *root){
@@ -35,6 +36,32 @@ bool checkForBst(Node *root){
     return (lhmax< root-> data && rhmin > root-> data && checkForBst(root-> left) && checkForBst(root-> right)); 
 }
 
+// efficient solution 
+
+bool checkForBst2(Node *root, int min, int max){
+    if(root == NULL) return true; 
+
+    return (root-> data >  min &&
+            root->data < max  &&
+            checkForBst2(root-> left, min, root-> data) &&
+            checkForBst2(root-> right, root-> data, max)
+            ); 
+}
+
+// idea: to use inorder traversals 
+// int prev = INT_MIN; 
+bool checkForBst3(Node *root, int prev ){
+    if(root == NULL) return NULL; 
+
+    if(checkForBst3(root-> left, prev) == false) return false; 
+
+    if(root->data <= prev) return false; 
+    prev = root-> data; 
+
+    return checkForBst3(root-> right, prev); 
+    
+}
+
 int main(){
     Node *root = new Node(10); 
     root-> left = new Node(8); 
@@ -42,5 +69,9 @@ int main(){
     root-> right-> left = new Node(53); 
     root-> right -> right = new Node(24); 
     cout << checkForBst(root); 
+    cout << endl;
+    cout << checkForBst2(root, INT_MIN, INT_MAX);
+    cout << endl;
+    cout << checkForBst3(root, INT_MIN); 
     return 0; 
 }
