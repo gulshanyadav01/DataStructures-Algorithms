@@ -37,6 +37,20 @@ bool isPairSum(vector<int> &arr, int sum){
     return false;
 }
 
+// method 2: hashing 
+
+bool pairSum(Node *root, int sum, unordered_set<int> s){
+    if(root == NULL) return false; 
+
+    if(pairSum(root-> left, sum, s) == true) return true;
+
+    if(s.find(sum-root-> data)!= s.end())  return true; 
+    else{
+        s.insert(root-> data);
+    }
+    return pairSum(root-> right, sum, s);
+}
+
 int main(){
     Node *root = new Node(10); 
     root-> left = new Node(8); 
