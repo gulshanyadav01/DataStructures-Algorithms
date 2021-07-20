@@ -7,8 +7,10 @@ date: 19-July-2021
 #include<bits/stdc++.h>
 using namespace std; 
 
-
+int kSortedArray(int arr[], int num){
+    
+}
 
 int main(){
-    return 0; 
+    // return 0; 
 }
