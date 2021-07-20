@@ -27,6 +27,7 @@ void verticalTraversal(Node *root){
         }
 
         if(curr-> right!= NULL){
+            
             q.push({curr-> right, hd+1});
         }
     }
