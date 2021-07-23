@@ -30,7 +30,7 @@ class myHash{
         for(auto x: table[i]){
             if(x== key)return true; 
         }
-        return false;
+        return false
     }
 
 
