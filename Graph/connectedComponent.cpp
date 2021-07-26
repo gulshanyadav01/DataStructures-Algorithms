@@ -7,32 +7,6 @@ date: 26-July-2021
 #include<bits/stdc++.h>
 using namespace std;
 
-
-// -------------------------- When source is given and connected graph -----------------
-
-void BFS(vector<int> adj[], int v, int s){
-  bool  visited[v+1] ; 
-  for(int i = 0; i< v; i++){
-      visited[i] = false; 
-  }
-  queue <int> q; 
-  q.push(s);
-  visited[s] = true; 
-  while(q.empty() == false){
-      int u = q.front(); 
-      q.pop(); 
-      
-      cout << u << " "; 
-      for(int i: adj[u]){
-          if(visited[i] == false){
-              visited[i] = true; 
-              q.push(i);
-          }
-      }
-  }
-
-}
-
 // ---------------------- when source is not given and disconnected graph-----------------
 
 void bfs(vector<int> adj[], int s, bool visited[]){
@@ -42,7 +16,7 @@ void bfs(vector<int> adj[], int s, bool visited[]){
     while(q.empty() == false){
         int u = q.front(); 
         q.pop(); 
-        cout << u << " "; 
+        // cout << u << " "; 
         for(int i: adj[u]){
             if(visited[i] == false){
                 q.push(i); 
@@ -53,16 +27,19 @@ void bfs(vector<int> adj[], int s, bool visited[]){
 
 }
 
-void bfsDis(vector<int> adj[], int v){
+int  bfsDis(vector<int> adj[], int v){
     bool visited[v]; 
+    int count = 0; 
     for(int i = 0; i< v; i++){
         visited[i] = false; 
     }
     for(int i = 0; i< v; i++){
         if(visited[i] == false){
             bfs(adj, i, visited); 
+            count++; 
         }
     }
+    return count; 
 }
 
 
@@ -93,7 +70,7 @@ int main(){
     addEdge(adj, 4, 5); 
     addEdge(adj, 4, 6); 
     addEdge(adj, 5, 6); 
-    bfsDis(adj, v); 
+   cout <<  bfsDis(adj, v); 
     // addEdge(adj, 0 , 1);
     // addEdge(adj, 0, 2);
     // addEdge(adj, 1, 3);
