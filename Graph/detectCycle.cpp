@@ -56,5 +56,6 @@ int main(){
     addEdge(adj, 2, 4); 
     addEdge(adj, 4, 5); 
     addEdge(adj, 3, 2); 
-    cout << isCycle(adj, v); 
+    cout << isCycle(adj, v);
+    return 0; 
 }
