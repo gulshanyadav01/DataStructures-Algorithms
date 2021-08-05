@@ -40,9 +40,14 @@ bool isCycle(vector<int> adj[], int v){
 }
 
 
-void addEdge(vector<int> adj[], int v, int u){
+void addEdge(vector<int> adj[], int v, int u, vector<int> &ind){
     adj[u].push_back(v); 
-    adj[v].push_back(u); 
+    // ind[u]
+    // adj[v].push_back(u); 
+}
+
+void topologicalSort(vector<int> adj[], int ){
+
 }
 
 int main(){
@@ -57,5 +62,5 @@ int main(){
     addEdge(adj, 4, 5); 
     addEdge(adj, 3, 2); 
     cout << isCycle(adj, v);
-    return 0; 
+    // return 0; 
 }
