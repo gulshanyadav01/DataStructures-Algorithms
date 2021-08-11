@@ -21,6 +21,7 @@ void bellmanFord(vector<vector<int>> graph, int v){
     for(int i = 0; i< v; i++){
         cout << dist[i] <<" "; 
     }
+    
 }
 
 int main(){
