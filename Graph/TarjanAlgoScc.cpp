@@ -22,19 +22,21 @@ void Dfs(int u, vector<int> &disc, vector<int> &low, vector<bool> &presentStack,
             low[u] = min(low[u], low[v]);
         }
 
+        // back edge 
         else if(presentStack[v]){
             low[u] = min(low[u], disc[v]); 
         }
     }
     // head edge 
     if(low[u] == disc[u]){
-        while(myStack.top() != u){
+        while( myStack.top() != u){
 
             cout << myStack.top() <<" "; 
             presentStack[myStack.top()] = false; 
             myStack.pop(); 
 
         }
+        
         cout << myStack.top() <<"\n"; 
         presentStack[myStack.top()] = false; 
         myStack.pop(); 
