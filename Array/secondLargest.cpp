@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std; 
+
 int secondlargest(int arr[]  , int num ){
     int lar = 0, max = arr[0];
     for(int i= 0; i < num; i++){
@@ -46,4 +47,5 @@ int main(){
     }
     cout<< secondLargest(arr, num);
     return 0;
+    
 }

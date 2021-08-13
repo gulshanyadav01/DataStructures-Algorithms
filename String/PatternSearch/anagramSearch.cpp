@@ -7,20 +7,24 @@ Date: 05-Nov-2020
 using namespace std;
 const int CHAR = 256;
 
+
 // to check the anagram 
 // pat : pattern 
 // text: whole string 
 bool anagram(string text, string pat, int i ){
     int count[CHAR] = {0}; 
+
     for(int j = 0; j< pat.length(); j++ ) { 
         count[pat[j]]++; 
         count[text[i+j]]--; 
     }
+
     for(int i = 0; i<CHAR; i++){
         if(count[i]> 0){
             return false; 
         }
     }
+    
     return true; 
 }
 
@@ -54,3 +58,4 @@ int main(){
     return 0;
     
 }
+
