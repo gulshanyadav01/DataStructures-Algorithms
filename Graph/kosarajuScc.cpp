@@ -16,7 +16,7 @@ void addEdge(vector<int> adj[], int u, int v){
 void dfsRec(vector<int> adj[], int s, stack<int> &st, vector<bool> &visited){
     visited[s] = true; 
 
-    for(int u: adj[s]){
+    for(int u: adj[s]){ 
         if(visited[u] == false){
             dfsRec(adj, u, st, visited);
         }
