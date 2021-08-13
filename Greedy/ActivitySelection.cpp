@@ -8,7 +8,9 @@ date: 12-Aug-2021
 using namespace std;
 
 bool myComp(pair<int, int> a, pair<int, int> b){
+
     return (a.second < b.second); 
+    
 }
 
 int maxActivitySelect(vector<pair<int, int>> &arr){
@@ -23,6 +25,7 @@ int maxActivitySelect(vector<pair<int, int>> &arr){
             prev = curr; 
         }
     }
+
     return res; 
 
 
