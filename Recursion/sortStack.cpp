@@ -23,6 +23,8 @@ void insert(stack<int> &st, int temp){
 
 }
 
+
+
 void sort(stack<int> &st){
     if(st.size() ==1){
         return;
@@ -46,7 +48,7 @@ void display( stack<int> s){
 
 int main(){
     stack<int> st; 
-    
+
     st.push(5);
     st.push(1);
     st.push(0);
