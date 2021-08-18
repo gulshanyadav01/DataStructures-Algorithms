@@ -1,6 +1,11 @@
+/*
+author:gulshan yadav
+email: gulshany01@gmail.com
+date: 18-Aug-2021
+*/
 #include<iostream>
 #include<bits/stdc++.h>
-using namespace std; 
+using namespace std;
 
 void subsetSum(int index, vector<int> &arr, vector<int> &out, vector<vector<int>> &ans){
 
