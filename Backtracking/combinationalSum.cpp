@@ -50,7 +50,7 @@ int main(){
     int target; 
     cin >> target; 
 
-    combinationalSum(0, target, ans, arr, aux, 0, 0);
+    combinationalSum(0, target, ans, arr, aux, 0, INT_MAX);
 
     for(int i = 0; i< ans.size(); i++){
         for(int j = 0; j< ans[i].size(); j++){
