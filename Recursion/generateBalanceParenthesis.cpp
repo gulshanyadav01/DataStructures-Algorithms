@@ -14,7 +14,7 @@ void generateBalanced(int open, int close, string op, vector<string> &st){
         out1.push_back('('); 
 
         generateBalanced(open-1, close, out1, st); 
-        // return; 
+         
     }
 
     if(close > open ){
@@ -22,7 +22,7 @@ void generateBalanced(int open, int close, string op, vector<string> &st){
         out2.push_back(')'); 
 
         generateBalanced(open , close -1 , out2, st); 
-        // return ; 
+         
     }
 }
 
