@@ -28,6 +28,28 @@ int knapsack( int wt[], int val[], int w, int num){
     }
 }
 
+// int knapsack2(int wt[], int val, int w, int n){
+
+//     for(int i = 0; i< n + 1; i++){
+//         for(int j = 0; i< w+1; j++){
+//             if(i ==0 || j == 0){
+//                 dp[i][j] = 0; 
+//             }
+//         }
+//     }
+
+//     // 
+//     for(int i = 1; i< n+1; i++){
+//         for(int j = 1; j< w+1; j++){
+
+//             if(wt[i-1] <= w ){
+
+//                 dp[i][j]  = max(val[i-1] + dp[i])
+//             }
+//         }
+//     }
+// }
+
 
 int main(){
     memset(dp, -1, sizeof(dp)); 

@@ -32,6 +32,8 @@ class Heap{
     }
 
     void insert(int x){
+        if(size == cap) return; 
+
         size++; 
         arr[size-1] = x; 
         for(int i = size-1; i!= 0 && arr[parent(i)] > arr[i]; ){
@@ -48,12 +50,10 @@ int main(){
     Heap h(10); 
     h.insert(10); 
     h.insert(5); 
-    h.insert(1); 
-    // h.insert(-1);
-    // h.insert(0); 
+    h.insert(1);
     for(int i = 0; i< h.size; i++){
         cout << h.arr[i]<<" "; 
     }
-    // cout << h.arr[0]<<endl;
+    
     return 0; 
 }

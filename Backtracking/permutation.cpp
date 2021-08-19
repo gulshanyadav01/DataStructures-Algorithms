@@ -8,6 +8,8 @@ date: 18-Aug-2021
 using namespace std;
 
 
+
+
 void permutation(vector<int> &arr, vector<int> &aux, vector<bool> &freq, vector<vector<int>> &ans){
     
     if(aux.size() == arr.size()){
