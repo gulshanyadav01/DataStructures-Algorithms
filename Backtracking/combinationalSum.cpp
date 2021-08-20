@@ -23,6 +23,7 @@ void combinationalSum(int ind, int target,  vector<vector<int>> &ans, vector<int
         aux.push_back(arr[ind]); 
         combinationalSum(ind, target-arr[ind], ans, arr, aux); 
         aux.pop_back();
+        
 
     }
 
