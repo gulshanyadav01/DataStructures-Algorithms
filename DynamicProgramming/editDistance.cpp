@@ -50,7 +50,7 @@ int editDistanceDp(string s1, string s2, int m, int n){
             }
 
             else{
-                dp[i][j] = 1 + min(dp[i][j-1], min(dp[i-1][j], dp[i-1][j-1])); 
+                dp[i][j] = 1 + min({dp[i][j-1],dp[i-1][j], dp[i-1][j-1]}); 
             }
 
         }
