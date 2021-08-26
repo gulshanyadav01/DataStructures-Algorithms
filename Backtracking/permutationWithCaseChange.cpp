@@ -1,7 +1,11 @@
+/*
+author:gulshan yadav
+email: gulshany01@gmail.com
+date: 26-Aug-2021
+*/
 #include<iostream>
 #include<bits/stdc++.h>
-using namespace std; 
-
+using namespace std;
 
 void  permutation(string inp, string out){
 
@@ -13,14 +17,13 @@ void  permutation(string inp, string out){
     string out1 = out; 
     string out2 = out; 
 
-    out1.push_back(inp[0]);
-    out2.push_back(inp[0]-32);
-     
-    inp.erase(inp.begin() + 0); 
+    out1.push_back(inp[0] - 32);
+    out2.push_back(inp[0]); 
+
+    inp.erase(inp.begin() + 0);
 
     permutation(inp, out1);
-
-    permutation(inp, out2); 
+    permutation(inp, out2);
 
 }
 
