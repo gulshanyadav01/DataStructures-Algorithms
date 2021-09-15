@@ -23,6 +23,7 @@ class Node{
 
 bool detectLoop(Node *head){
     Node *curr = head; 
+    
     Node *temp = new Node; 
     while(curr!= head){
         if(curr->next == NULL) return false;
