@@ -4,8 +4,6 @@ date: 21-june-2021
 email: gulshany01@gmail.com
 */
 #include<iostream>
-// #include "Node.h"
-// #include "print.h"
 #include<unordered_set>
 using namespace std; 
 class Node{
@@ -23,7 +21,7 @@ class Node{
 
 bool detectLoop(Node *head){
     Node *curr = head; 
-    
+
     Node *temp = new Node; 
     while(curr!= head){
         if(curr->next == NULL) return false;
