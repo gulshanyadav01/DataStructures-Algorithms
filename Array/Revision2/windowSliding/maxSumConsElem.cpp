@@ -44,7 +44,7 @@ int main(){
     }
     int k; 
     cin >> k;
-    // cout << maxSumKConsElem(arr, num, k);
-    cout << maxSum(arr, num, k); 
+     cout << maxSumKConsElem(arr, num, k);
+//    cout << maxSum(arr, num, k);
     
 }
