@@ -53,8 +53,7 @@ int main(){
     for(int i = 0; i < num; i++){
         cin >> arr[i];
     }
-    // cout << consective1(arr, num );
-    // cout <<cons(arr, num);
+
     cout << cons1(arr, num);
     return 0;
 
