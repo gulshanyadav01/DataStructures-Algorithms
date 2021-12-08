@@ -10,7 +10,7 @@ void deletion(int arr[], int num, int ele ) {
     }
     if(i == num ){
             cout << "element is not found at all" << endl;
-            return;
+            return
             
     }
     else{
