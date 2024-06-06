@@ -6,7 +6,8 @@ date : 19-NOV-2020
 // time complexity of this appraoch is Q(N^2); 
 
 int circularSum(int arr[], int num){
-    int res = arr[0]; 
+    int res = arr[0];
+
     for(int i = 0; i< num;  i++){
         int curr_sum = arr[i]; 
         int curr_max = arr[i]; 
