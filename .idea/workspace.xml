@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9209dd0d-0c59-4fd8-b529-06cf85e29aaa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Array/Revision/circularSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/Array/Revision/circularSum.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +35,9 @@
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/gulshanyadav/Desktop/DataStructures-Algorithms",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -47,7 +53,7 @@
       <workItem from="1638807464139" duration="1207000" />
       <workItem from="1638857688192" duration="255000" />
       <workItem from="1638987974715" duration="84000" />
-      <workItem from="1717657777104" duration="12000" />
+      <workItem from="1717657777104" duration="1409000" />
     </task>
     <servers />
   </component>
