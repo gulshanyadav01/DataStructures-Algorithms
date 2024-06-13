@@ -9,6 +9,7 @@ int circularSum(int arr[], int num){
     int res = arr[0];
 
 
+
     for(int i = 0; i< num;  i++){
         int curr_sum = arr[i]; 
         int curr_max = arr[i]; 
